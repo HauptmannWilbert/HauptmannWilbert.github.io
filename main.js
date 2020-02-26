@@ -1,3 +1,4 @@
+
 $(window).scroll(function() {
     var st = $(this).scrollTop();
     $('.banner__img').css({
