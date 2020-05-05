@@ -1163,7 +1163,7 @@ button {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 18px;
-    background-image: url(../images/phone.svg);
+    background-image: url(./images/phone.svg);
     padding-left: 35px; }
     @media (max-width: 1023px) {
       .top__phone {
@@ -1531,7 +1531,7 @@ button {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 18px;
-    background-image: url(../images/phone.svg);
+    background-image: url(./images/phone.svg);
     padding-left: 35px; }
     @media (max-width: 1023px) {
       .footer__phone {
