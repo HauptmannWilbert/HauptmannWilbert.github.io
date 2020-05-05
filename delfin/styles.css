@@ -1085,6 +1085,7 @@ button {
     fill: #00B38B;
     transition: .3s; }
     .slider svg:hover {
+      cursor: pointer;
       fill: #007D59; }
     @media (max-width: 767px) {
       .slider svg {
