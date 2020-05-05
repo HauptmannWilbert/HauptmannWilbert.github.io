@@ -21,8 +21,6 @@ $(document).ready(function() {
     
 });
 
-$(function() {
-
 $('.slider__list').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
@@ -78,5 +76,3 @@ $('.slider__list').owlCarousel({
           }
       }
     });
-
-});
