@@ -1051,16 +1051,16 @@ button {
     position: absolute;
     bottom: 30px;
     left: 0;
-    padding: 0px 0px;
+    padding: 0px 30px;
     width: 100%;
     display: flex;
     z-index: 20; }
     @media (max-width: 1023px) {
       .slider__dots {
-        padding: 0px 0px; } }
+        padding: 0px 20px; } }
         @media (max-width: 767px) {
           .slider__dots {
-            padding: 0px 0px;
+            padding: 0px 15px;
             bottom: 20px;
             display: none; } }
   .slider .owl-dot {
