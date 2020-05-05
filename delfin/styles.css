@@ -1038,10 +1038,10 @@ button {
     z-index: 20;
     display: flex;
     justify-content: space-between;
-    padding: 0px 60px; }
+    padding: 0px 0px; }
     @media (max-width: 1023px) {
       .slider__navigation {
-        padding: 0px 30px; } }
+        padding: 0px 0px; } }
         @media (max-width: 767px) {
           .slider__navigation {
             top: calc(50% - 15px);
@@ -1051,16 +1051,16 @@ button {
     position: absolute;
     bottom: 30px;
     left: 0;
-    padding: 0px 60px;
+    padding: 0px 0px;
     width: 100%;
     display: flex;
     z-index: 20; }
     @media (max-width: 1023px) {
       .slider__dots {
-        padding: 0px 30px; } }
+        padding: 0px 0px; } }
         @media (max-width: 767px) {
           .slider__dots {
-            padding: 0px 20px;
+            padding: 0px 0px;
             bottom: 20px;
             display: none; } }
   .slider .owl-dot {
