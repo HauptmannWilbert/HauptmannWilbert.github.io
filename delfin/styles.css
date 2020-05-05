@@ -1358,6 +1358,7 @@ button {
     fill: #00B38B;
     transition: .3s; }
     .subproduct svg:hover {
+      cursor: pointer;
       fill: #007D59; }
     @media (max-width: 1023px) {
       .subproduct svg {
