@@ -1252,10 +1252,10 @@ button {
       .card__state__box:last-child {
         margin-bottom: 0px; }
       .card__state__box--ready {
-        background-image: url(../images/product-ready.svg);
+        background-image: url(./images/product-ready.svg);
         background-position: left center;
         background-repeat: no-repeat; }
       .card__state__box--time {
-        background-image: url(../images/time-delivery.svg);
+        background-image: url(./images/time-delivery.svg);
         background-position: left center;
         background-repeat: no-repeat; }
