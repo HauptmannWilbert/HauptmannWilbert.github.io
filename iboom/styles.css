@@ -1281,7 +1281,7 @@ button {
         font-weight: bold; }
     .card__param__list {
       display: flex;
-      margin-top: 15px; }
+      flex-wrap: wrap; }
     .card__param__box {
       font-family: 'Gilroy';
       font-weight: 500;
@@ -1296,7 +1296,8 @@ button {
       height: 46px;
       border: 2px solid #DDDDDD;
       margin-right: 15px;
-      transition: .3s; }
+      transition: .3s;
+      margin-top: 15px; }
       .card__param__box:hover {
         cursor: pointer;
         border-color: rgba(24, 255, 70, 0.3); }
@@ -1307,9 +1308,10 @@ button {
     .card__param__icon {
       width: auto;
       height: auto;
-      max-width: 25px;
+      max-width: 72px;
       max-height: 48px; }
     .card__param__item {
+      margin-top: 15px;
       margin-right: 12px;
       padding: 6px 14px;
       display: flex;
@@ -1395,4 +1397,3 @@ button {
         background-image: url(./images/time-delivery.svg);
         background-position: left center;
         background-repeat: no-repeat; }
-
