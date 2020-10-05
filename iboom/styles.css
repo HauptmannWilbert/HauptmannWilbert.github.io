@@ -953,11 +953,21 @@ button {
     fill: #fff; }
 
 .container {
-  width: 1280px;
+  width: 1140px;
   margin: 0px auto; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1280px) {
     .container {
       width: 100%; } }
+
+.flex {
+  display: flex;
+  padding: 0px 60px; }
+  @media (max-width: 1279px) {
+    .flex {
+      padding: 0px 30px; } }
+  @media (max-width: 767px) {
+    .flex {
+      padding: 0px 20px; } }
 
 .card {
   margin-top: 60px; }
