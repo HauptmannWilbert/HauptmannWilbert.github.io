@@ -952,6 +952,13 @@ button {
   .icon__svg:hover {
     fill: #fff; }
 
+.slick-slider .slick-track {
+  display: flex; }
+
+.slick-slider.slick-vertical .slick-track {
+  flex-direction: column; }
+
+
 .container {
   width: 1140px;
   margin: 0px auto; }
@@ -971,12 +978,27 @@ button {
 
 .card {
   margin-top: 60px; }
+  @media (max-width: 767px) {
+    .card {
+      margin-top: 40px; } }
   .card__wrapper {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 1023px) {
+      .card__wrapper {
+        flex-direction: column; } }
   .card__block {
     display: flex;
     max-width: 645px; }
+    @media (max-width: 1279px) {
+      .card__block {
+        max-width: 475px; } }
+    @media (max-width: 1023px) {
+      .card__block {
+        max-width: unset; } }
+    @media (max-width: 767px) {
+      .card__block {
+        flex-direction: column-reverse; } }
   .card__carousel .owl-stage {
     display: flex;
     flex-direction: column; }
@@ -993,9 +1015,15 @@ button {
       opacity: 1; }
     .card__box.slick-current {
       opacity: 1; }
+    @media (max-width: 767px) {
+      .card__box {
+        padding: 0px; } }
   .card__item {
     padding: 20px 0px;
     outline: none; }
+    @media (max-width: 767px) {
+      .card__item {
+        padding: 0px; } }
   .card__link {
     display: flex;
     justify-content: center;
@@ -1012,6 +1040,10 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+    @media (max-width: 767px) {
+      .card__img {
+        max-width: 64px !important;
+        max-height: 64px !important; } }
   .card__navigation {
     display: flex;
     align-items: center;
@@ -1020,6 +1052,12 @@ button {
     width: 100%;
     height: 540px;
     justify-content: space-between; }
+    @media (max-width: 767px) {
+      .card__navigation {
+        height: auto;
+        flex-direction: row;
+        left: 0;
+        top: 18px; } }
   .card__prev, .card__next {
     outline: none;
     border: none;
@@ -1039,6 +1077,15 @@ button {
         opacity: 1; }
     .card__prev[disabled] svg, .card__next[disabled] svg {
       opacity: .3; }
+  @media (max-width: 767px) {
+    .card__prev svg, .card__next svg {
+      transform: rotate(-90deg); } }
+  @media (max-width: 767px) {
+    .card__prev {
+      margin-left: -5px; } }
+  @media (max-width: 767px) {
+    .card__next {
+      margin-right: -5px; } }
   .card__window {
     overflow: hidden;
     position: relative;
@@ -1046,29 +1093,59 @@ button {
     width: 100px; }
     .card__window--main {
       overflow: hidden; }
+    @media (max-width: 767px) {
+      .card__window {
+        width: calc(100% - 40px);
+        margin: 0px auto; } }
   .card__carousel {
     transition: .2s; }
   .card__left {
     width: 100px;
     position: relative; }
+    @media (max-width: 767px) {
+      .card__left {
+        width: 100%; } }
   .card__right {
     margin-left: 45px;
     width: calc(100% - 145px); }
+    @media (max-width: 767px) {
+      .card__right {
+        margin: 0px;
+        width: 100%; } }
   .card__images {
     width: auto !important;
     height: auto !important;
     max-width: 350px !important;
-    max-height: 400px !important;
+    max-height: 350px !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+    @media (max-width: 1279px) {
+      .card__images {
+        max-width: 240px !important;
+        max-height: 240px !important; } }
+    @media (max-width: 1023px) {
+      .card__images {
+        max-width: 350px !important;
+        max-height: 400px !important; } }
+    @media (max-width: 767px) {
+      .card__images {
+        max-width: 200px !important;
+        max-height: 200px !important; } }
   .card__main {
     padding: 30px 50px 30px 90px;
     position: relative; }
+    @media (max-width: 1279px) {
+      .card__main {
+        padding: 30px 20px 30px 60px; } }
+    @media (max-width: 767px) {
+      .card__main {
+        padding: 30px 20px; } }
   .card__list {
     transition: .2s; }
   .card__favorite {
+    z-index: 25;
     position: absolute;
     top: 0;
     right: 0; }
@@ -1077,6 +1154,10 @@ button {
       height: 32px;
       fill: #DEDEDF;
       transition: .3s; }
+      @media (max-width: 767px) {
+        .card__favorite svg {
+          width: 22px;
+          height: 22px; } }
       .card__favorite svg--active {
         fill: #18E146;
         opacity: .7; }
@@ -1090,7 +1171,8 @@ button {
     top: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    z-index: 25; }
   .card__deals {
     font-family: 'Gilroy';
     font-weight: 500;
@@ -1099,6 +1181,9 @@ button {
     padding: 3px 5px;
     margin-bottom: 5px;
     background: #FE3D2F; }
+    @media (max-width: 767px) {
+      .card__deals {
+        font-size: 12px; } }
   .card__new {
     font-family: 'Gilroy';
     font-weight: 500;
@@ -1107,6 +1192,9 @@ button {
     padding: 3px 5px;
     margin-bottom: 5px;
     background: #2EC858; }
+    @media (max-width: 767px) {
+      .card__new {
+        font-size: 12px; } }
   .card__offer {
     font-family: 'Gilroy';
     font-weight: 500;
@@ -1114,17 +1202,29 @@ button {
     color: #fff;
     padding: 3px 5px;
     background: #00ABE6; }
+    @media (max-width: 767px) {
+      .card__offer {
+        font-size: 12px; } }
   .card__rightside {
     width: calc(100% - 720px); }
+    @media (max-width: 1279px) {
+      .card__rightside {
+        width: calc(100% - 525px); } }
+    @media (max-width: 1023px) {
+      .card__rightside {
+        width: 100%;
+        margin-top: 40px; } }
   .card__price {
     font-family: 'Gilroy';
     font-weight: bold;
     font-size: 32px;
     color: #231F20;
     margin-bottom: 20px; }
+    @media (max-width: 767px) {
+      .card__price {
+        font-size: 26px; } }
   .card__topside {
     display: flex;
-    justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #EAEAEA;
     margin-bottom: 30px; }
@@ -1138,7 +1238,22 @@ button {
     font-weight: 500;
     font-size: 14px;
     color: #231F20;
+    transition: .3s;
+    max-width: 220px;
+    margin-right: 15px;
     transition: .3s; }
+    .card__button:last-child {
+      margin-right: 0px; }
+    .card__button:hover {
+      cursor: pointer;
+      background-color: #f4f4f4; }
+    @media (max-width: 767px) {
+      .card__button {
+        font-size: 12px;
+        max-width: 135px;
+        padding: 12px 10px;
+        width: calc(50% - 5px);
+        margin-right: 10px; } }
     .card__button--add {
       color: #fff;
       padding-left: 50px;
@@ -1147,6 +1262,14 @@ button {
       background-repeat: no-repeat;
       background-size: 16px;
       background-image: url(./images/basket.svg); }
+      .card__button--add:hover {
+        opacity: .7;
+        cursor: pointer;
+        background-color: #18E146; }
+      @media (max-width: 767px) {
+        .card__button--add {
+          background-image: unset;
+          padding: 12px 10px; } }
   .card__param {
     margin-bottom: 30px; }
     .card__param__name {
@@ -1235,6 +1358,9 @@ button {
     .card__table__td:first-child {
       opacity: 0.5;
       text-align: left; }
+    @media (max-width: 767px) {
+      .card__table__td {
+        font-size: 12px; } }
   .card__allparams {
     font-family: 'Gilroy';
     font-weight: 500;
@@ -1256,7 +1382,7 @@ button {
       font-weight: 500;
       font-size: 14px;
       color: #231F20;
-      padding: 2px 0px;
+      padding: 3px 0px;
       padding-left: 32px;
       margin-bottom: 12px; }
       .card__state__box:last-child {
@@ -1269,3 +1395,4 @@ button {
         background-image: url(./images/time-delivery.svg);
         background-position: left center;
         background-repeat: no-repeat; }
+
