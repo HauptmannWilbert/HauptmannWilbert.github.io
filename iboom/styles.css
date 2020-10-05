@@ -1146,7 +1146,7 @@ button {
       background-position: left 27px bottom 15px;
       background-repeat: no-repeat;
       background-size: 16px;
-      background-image: url(../images/basket.svg); }
+      background-image: url(./images/basket.svg); }
   .card__param {
     margin-bottom: 30px; }
     .card__param__name {
