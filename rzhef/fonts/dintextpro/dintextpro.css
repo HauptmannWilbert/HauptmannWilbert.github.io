@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PF DinText Pro';
+    src: local('PFDinTextPro-Regular'), local('PFDinTextPro-Regular'), url('PFDinTextPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinText Pro';
+    src: local('PFDinTextPro-Bold'), local('PFDinTextPro-Bold'), url('PFDinTextPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
