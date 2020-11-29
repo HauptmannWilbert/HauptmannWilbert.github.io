@@ -7,6 +7,13 @@
 
 @font-face {
     font-family: 'PF DinText Pro';
+    src: local('PFDinTextPro-Medium'), local('PFDinTextPro-Medium'), url('PFDinTextPro-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF DinText Pro';
     src: local('PFDinTextPro-Bold'), local('PFDinTextPro-Bold'), url('PFDinTextPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
