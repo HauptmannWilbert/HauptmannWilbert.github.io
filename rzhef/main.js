@@ -59,6 +59,36 @@ $(function() {
     });
 }); 
 
+
+$('.top__hamburger').on('click', function(){
+    $(this).addClass('top__hamburger--active');
+    $('.mobile').addClass('mobile--active');
+});
+
+$(function() {
+    $(".mobile__menu").on("click", ".mobile__link:not(.mobile__link--active)", function() {
+      $(this)
+        .addClass("mobile__link--active")
+        .siblings()
+        .removeClass("mobile__link--active")
+        .closest(".mobile")
+        .find(".mobile__item")
+        .removeClass("mobile__item--active")
+        .eq($(this).index())
+        .addClass("mobile__item--active");
+    });
+
+    $('.mobile__hamburger').on('click', function(){
+        $('.mobile__link').removeClass('mobile__link--active');
+        $('.mobile__item').removeClass('mobile__item--active');
+    });
+    $('.mobile__close').on('click', function(){
+        $('.mobile').removeClass('mobile--active');
+        $('.mobile__link').removeClass('mobile__link--active');
+        $('.mobile__item').removeClass('mobile__item--active');
+    });
+  });
+
 $('.slider__list').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
@@ -117,13 +147,14 @@ $('.slider__list').owlCarousel({
     margin:16,
     nav:false,
     dots:false,
-    loop:true,
+    loop:false,
     autoWidth: true,
     autoplay:false,
     autoplayTimeout:5000, 
     responsive:{ 
         0:{
             items:1,
+            autoWidth: false
         },
         767:{
             items:1
@@ -139,24 +170,80 @@ $('.slider__list').owlCarousel({
 
 
 
-ymaps.ready(init);
+  ymaps.ready(init);
 
-function init () {
-    var myMap = new ymaps.Map("map", {
-            center: [59.886670, 30.431560],
-            zoom: 14,
-			controls: ['zoomControl']
-        });
-
-	myPlacemark = new ymaps.Placemark([59.891909, 30.415518], {
-
-	}, {
-			iconLayout: 'default#image',
-			iconImageHref: '../images/map.svg',
-			iconImageSize: [72, 72],
-			iconImageOffset: [ -45, -80]
-        });
-
- myMap.geoObjects.add(myPlacemark);
-
-}
+  function init () {
+      var myMap = new ymaps.Map("map", {
+              center: [59.886670, 30.431560],
+              zoom: 14,
+              controls: ['zoomControl']
+          });
+  
+          myPlacemarkOne = new ymaps.Placemark([56.859625, 35.911851], {
+              hintContent: 'Б. Сухаревский пер., д.17, строение 2',
+              
+          }, {
+              iconLayout: 'default#image',
+              iconImageHref: '../images/map.svg',
+              iconImageSize: [40, 40]
+          });
+  
+          myPlacemarkTwo = new ymaps.Placemark([55.771034, 37.629358], {
+              hintContent: 'Б. Сухаревский пер., д.17, строение 2',
+          }, {
+              iconLayout: 'default#image',
+              iconImageHref: '../images/map.svg',
+              iconImageSize: [40, 40]
+          });
+  
+          myPlacemarkTree = new ymaps.Placemark([59.891909, 30.415518], {
+              hintContent: 'Б. Сухаревский пер., д.17, строение 2',
+          }, {
+              iconLayout: 'default#image',
+              iconImageHref: '../images/map.svg',
+              iconImageSize: [40, 40]
+          });
+  
+          myPlacemarkFour = new ymaps.Placemark([56.262877, 34.329065], {
+              hintContent: 'Б. Сухаревский пер., д.17, строение 2',
+          }, {
+              iconLayout: 'default#image',
+              iconImageHref: '../images/map.svg',
+              iconImageSize: [40, 40]
+          });
+  
+  
+  
+          
+          myMap.geoObjects.add(myPlacemarkOne).add(myPlacemarkTwo).add(myPlacemarkTree).add(myPlacemarkFour);
+          
+          $('.contacts__box--1').click(function() {
+              myMap.setCenter([56.859625, 35.911851], 14, {
+                  checkZoomRange: true
+              });
+              $('.contacts__box').removeClass('contacts__box--active');
+              $(this).addClass('contacts__box--active');
+          });
+          $('.contacts__box--2').click(function() {
+              myMap.setCenter([55.771034, 37.629358], 14, {
+                  checkZoomRange: true
+              });
+              $('.contacts__box').removeClass('contacts__box--active');
+              $(this).addClass('contacts__box--active');
+          });
+          $('.contacts__box--3').click(function() {
+              myMap.setCenter([59.891909, 30.415518], 14, {
+                  checkZoomRange: true
+              });
+              $('.contacts__box').removeClass('contacts__box--active');
+              $(this).addClass('contacts__box--active');
+          });
+          $('.contacts__box--4').click(function() {
+              myMap.setCenter([56.262877, 34.329065], 14, {
+                  checkZoomRange: true
+              });
+              $('.contacts__box').removeClass('contacts__box--active');
+              $(this).addClass('contacts__box--active');
+          });
+  
+  }
