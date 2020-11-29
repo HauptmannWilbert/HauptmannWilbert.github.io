@@ -84,6 +84,7 @@ $(function() {
         $('.mobile__item').removeClass('mobile__item--active');
     });
     $('.mobile__close').on('click', function(){
+        $('.top__hamburger').removeClass('top__hamburger--active');
         $('.mobile').removeClass('mobile--active');
         $('.mobile__link').removeClass('mobile__link--active');
         $('.mobile__item').removeClass('mobile__item--active');
