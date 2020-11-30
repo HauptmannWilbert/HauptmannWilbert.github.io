@@ -186,7 +186,7 @@ $('.slider__list').owlCarousel({
               
           }, {
               iconLayout: 'default#image',
-              iconImageHref: '../images/map.svg',
+              iconImageHref: './images/map.svg',
               iconImageSize: [40, 40]
           });
   
@@ -194,7 +194,7 @@ $('.slider__list').owlCarousel({
               hintContent: 'Б. Сухаревский пер., д.17, строение 2',
           }, {
               iconLayout: 'default#image',
-              iconImageHref: '../images/map.svg',
+              iconImageHref: './images/map.svg',
               iconImageSize: [40, 40]
           });
   
@@ -202,7 +202,7 @@ $('.slider__list').owlCarousel({
               hintContent: 'Б. Сухаревский пер., д.17, строение 2',
           }, {
               iconLayout: 'default#image',
-              iconImageHref: '../images/map.svg',
+              iconImageHref: './images/map.svg',
               iconImageSize: [40, 40]
           });
   
@@ -210,7 +210,7 @@ $('.slider__list').owlCarousel({
               hintContent: 'Б. Сухаревский пер., д.17, строение 2',
           }, {
               iconLayout: 'default#image',
-              iconImageHref: '../images/map.svg',
+              iconImageHref: './images/map.svg',
               iconImageSize: [40, 40]
           });
   
