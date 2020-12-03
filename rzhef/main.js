@@ -82,6 +82,7 @@ $(function() {
     $('.mobile__hamburger').on('click', function(){
         $('.mobile__link').removeClass('mobile__link--active');
         $('.mobile__item').removeClass('mobile__item--active');
+
     });
     $('.mobile__close').on('click', function(){
         $('.top__hamburger').removeClass('top__hamburger--active');
@@ -91,6 +92,14 @@ $(function() {
     });
   });
 
+  $('.catalog__filters').on('click', function(){
+    $('.filter').addClass('filter--active');
+  });
+  $('.filter__close').on('click', function(){
+    $('.filter').removeClass('filter--active');
+  });
+
+  
 $('.slider__list').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
