@@ -1161,6 +1161,9 @@ button {
     background-color: #FFC20E;
     padding: 18px 45px;
     margin-top: 16px; }
+    @media (max-width: 767px) {
+      .sale__button {
+        width: 100%; } }
   .sale__rights {
     display: flex;
     align-items: center;
