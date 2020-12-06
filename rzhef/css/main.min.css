@@ -16,6 +16,7 @@
  * Remove default margin.
  */
 body {
+  font-weight: normal;
   margin: 0; }
 
 /* HTML5 display definitions
