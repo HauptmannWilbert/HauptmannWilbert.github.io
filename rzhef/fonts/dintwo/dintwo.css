@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-Hairline.eot');
     src: local('PF Din Text Universal Hairline'), local('PFDinTextUniversal-Hairline'),
         url('PFDinTextUniversal-Hairline.eot?#iefix') format('embedded-opentype'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-Medium.eot');
     src: local('PF Din Text Universal Medium'), local('PFDinTextUniversal-Medium'),
         url('PFDinTextUniversal-Medium.eot?#iefix') format('embedded-opentype'),
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-ExtraThin.eot');
     src: local('PF Din Text Universal ExtraThin'), local('PFDinTextUniversal-ExtraThin'),
         url('PFDinTextUniversal-ExtraThin.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-Light.eot');
     src: local('PF Din Text Universal Light'), local('PFDinTextUniversal-Light'),
         url('PFDinTextUniversal-Light.eot?#iefix') format('embedded-opentype'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal.eot');
     src: local('PF Din Text Universal'), local('PFDinTextUniversal'),
         url('PFDinTextUniversal.eot?#iefix') format('embedded-opentype'),
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-ExtraBlack.eot');
     src: local('PF Din Text Universal ExtraBlack'), local('PFDinTextUniversal-ExtraBlack'),
         url('PFDinTextUniversal-ExtraBlack.eot?#iefix') format('embedded-opentype'),
@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-Thin.eot');
     src: local('PF Din Text Universal Thin'), local('PFDinTextUniversal-Thin'),
         url('PFDinTextUniversal-Thin.eot?#iefix') format('embedded-opentype'),
@@ -83,7 +83,7 @@
 }
 
 @font-face {
-    font-family: 'PF Din Text Universal';
+    font-family: 'PF DinText Pro';
     src: url('PFDinTextUniversal-Bold.eot');
     src: local('PF Din Text Universal Bold'), local('PFDinTextUniversal-Bold'),
         url('PFDinTextUniversal-Bold.eot?#iefix') format('embedded-opentype'),
