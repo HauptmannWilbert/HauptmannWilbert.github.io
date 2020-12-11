@@ -44,6 +44,33 @@ $(function() {
     });
   });
 
+  $(function() {
+    $(".tabs__top").on("click", ".tabs__tab:not(.tabs__tab--active)", function() {
+      $(this)
+        .addClass("tabs__tab--active")
+        .siblings()
+        .removeClass("tabs__tab--active")
+        .closest(".tabs")
+        .find(".tabs__box")
+        .removeClass("tabs__box--active")
+        .eq($(this).index())
+        .addClass("tabs__box--active");
+    });
+  });
+
+  $(function() {
+    $(".complectation__tabs").on("click", ".complectation__tab:not(.complectation__tab--active)", function() {
+      $(this)
+        .addClass("complectation__tab--active")
+        .siblings()
+        .removeClass("complectation__tab--active")
+        .closest(".complectation")
+        .find(".complectation__box")
+        .removeClass("complectation__box--active")
+        .eq($(this).index())
+        .addClass("complectation__box--active");
+    });
+  });
 
 
   $(function($){
@@ -99,7 +126,60 @@ $(function() {
     $('.filter').removeClass('filter--active');
   });
 
+
+  $('#big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '#thumbs',
+    vertical: true,
+    verticalSwiping: true,
+    arrows: false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          verticalSwiping: false,
+          vertical: false
+        }
+      }
+    ]
+  });
   
+  $('#thumbs').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '#big',
+    focusOnSelect: true,
+    vertical: true,
+    verticalSwiping: true,
+    prevArrow: $('.card__prev'),
+    nextArrow: $('.card__next'),
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 3,
+          verticalSwiping: false,
+          vertical: false
+        }
+      },
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 2,
+          verticalSwiping: false,
+          vertical: false
+        }
+      }
+    ]
+  });
+
+
 $('.slider__list').owlCarousel({
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
