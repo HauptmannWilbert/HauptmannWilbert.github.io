@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
- html {
+html {
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -891,6 +891,11 @@ button {
       padding: 0px 15px;
       padding-top: 20px;
       padding-bottom: 40px; } }
+  .content--company {
+    padding-bottom: 40px; }
+    @media (max-width: 767px) {
+      .content--company {
+        padding-bottom: 20px; } }
   .content__top {
     display: flex;
     margin-bottom: 30px; }
@@ -4208,3 +4213,158 @@ button {
       .complectation__decor .catalog__favorite {
         visibility: visible;
         opacity: 1; } }
+
+.company {
+  width: 100%;
+  max-width: 1235px; }
+  .company__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    @media (max-width: 767px) {
+      .company__tabs {
+        margin-bottom: 25px; } }
+  .company__tab {
+    font-family: 'PF DinText Pro';
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 15px 45px;
+    position: relative;
+    cursor: pointer;
+    background-color: #f4f4f4; }
+    .company__tab::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.15);
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      transition: .3s; }
+      @media (max-width: 767px) {
+        .company__tab::after {
+          bottom: -2px; } }
+    .company__tab:hover::after {
+      background-color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 767px) {
+      .company__tab {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        padding: 12px 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.15); } }
+    .company__tab--active {
+      color: #000; }
+      .company__tab--active::after {
+        background-color: #FFC20E; }
+  .company__text {
+    display: flex;
+    margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .company__text {
+        flex-direction: column;
+        margin-bottom: 20px; } }
+  .company__topic {
+    font-family: 'PF DinText Pro';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.35;
+    color: #231F20;
+    max-width: 160px;
+    width: 100%;
+    margin-right: 25px; }
+    @media (max-width: 767px) {
+      .company__topic {
+        max-width: none;
+        margin-right: 0px;
+        margin-bottom: 15px; } }
+  .company__desc {
+    width: calc(100% - 185px);
+    font-family: 'PF DinText Pro';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.35;
+    color: #231F20;
+    opacity: 0.6; }
+    @media (max-width: 767px) {
+      .company__desc {
+        width: 100%;
+        font-size: 16px; } }
+  .company__img {
+    width: 100%;
+    margin: 50px 0px;
+    display: block; }
+    @media (max-width: 767px) {
+      .company__img {
+        margin: 30px 0px; } }
+
+.plus__topic {
+  font-family: 'PF DinText Pro';
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.35;
+  color: #231F20;
+  max-width: 160px;
+  width: 100%;
+  margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .plus__topic {
+      margin-bottom: 25px; } }
+
+.plus__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1180px;
+  width: 100%; }
+
+.plus__box {
+  max-width: 220px; }
+  @media (max-width: 1199px) {
+    .plus__box {
+      max-width: none;
+      margin-top: 40px;
+      width: calc(50% - 15px); }
+      .plus__box:nth-child(-n+2) {
+        margin-top: 0px; } }
+  @media (max-width: 767px) {
+    .plus__box {
+      width: 100%; }
+      .plus__box:nth-child(-n+2) {
+        margin-top: 30px; }
+      .plus__box:first-child {
+        margin-top: 0px; } }
+
+.plus__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .plus__top {
+      margin-bottom: 25px; } }
+
+.plus__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block; }
+
+.plus__name {
+  font-family: 'PF DinText Pro';
+  font-weight: bold;
+  font-size: 18px;
+  color: #231F20;
+  margin-bottom: 12px; }
+
+.plus__desc {
+  font-family: 'PF DinText Pro';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.35;
+  color: #231F20;
+  max-width: 220px; }
