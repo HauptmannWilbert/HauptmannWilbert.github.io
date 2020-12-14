@@ -885,12 +885,12 @@ button {
 .content {
   padding: 0px 30px;
   padding-top: 40px;
-  padding-bottom: 80px; }
+  padding-bottom: 40px; }
   @media (max-width: 767px) {
     .content {
       padding: 0px 15px;
       padding-top: 20px;
-      padding-bottom: 40px; } }
+      padding-bottom: 20px; } }
   .content--company {
     padding-bottom: 40px; }
     @media (max-width: 767px) {
@@ -4393,3 +4393,206 @@ button {
   line-height: 1.35;
   color: #231F20;
   max-width: 220px; }
+
+.offer {
+  padding: 0px 30px;
+  padding-top: 40px;
+  padding-bottom: 160px; }
+  @media (max-width: 767px) {
+    .offer {
+      padding: 0px 15px;
+      padding-top: 20px;
+      padding-bottom: 40px; } }
+  .offer__block {
+    margin-top: 40px; }
+    .offer__block:first-child {
+      margin-top: 0px; }
+  .offer__title {
+    font-family: 'PF DinText Pro';
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .offer__title {
+        font-size: 28px;
+        margin-bottom: 25px; } }
+  .offer__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .offer .catalog__box {
+    width: 20%;
+    padding: 25px 25px;
+    padding-bottom: 0px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    transition: .3s;
+    z-index: 0; }
+    .offer .catalog__box:hover {
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
+      z-index: 10; }
+      .offer .catalog__box:hover .catalog__favorite {
+        visibility: visible;
+        opacity: 1; }
+      .offer .catalog__box:hover .catalog__bottom {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.06); }
+        @media (max-width: 767px) {
+          .offer .catalog__box:hover .catalog__bottom {
+            box-shadow: none; } }
+    @media (max-width: 1680px) {
+      .offer .catalog__box {
+        width: 25%; }
+        .offer .catalog__box:last-child {
+          display: none; } }
+    @media (max-width: 1279px) {
+      .offer .catalog__box {
+        width: 33.33333%; }
+        .offer .catalog__box:nth-child(4) {
+          display: none; } }
+    @media (max-width: 1023px) {
+      .offer .catalog__box {
+        width: 50%; }
+        .offer .catalog__box:nth-child(4) {
+          display: block; } }
+    @media (max-width: 767px) {
+      .offer .catalog__box {
+        width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
+        padding: 25px; }
+        .offer .catalog__box:last-child {
+          margin-bottom: 0px;
+          display: block; } }
+  .offer .catalog__bottom {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    left: 0;
+    bottom: -106px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s; }
+    @media (max-width: 767px) {
+      .offer .catalog__bottom {
+        position: unset;
+        visibility: visible;
+        opacity: 1;
+        bottom: 0;
+        padding: 0px; } }
+  .offer .catalog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+  .offer .catalog__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px; }
+  .offer .catalog__name {
+    font-family: 'PF DinText Pro';
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+    color: #000000;
+    cursor: pointer; }
+    .offer .catalog__name:hover {
+      color: #FFC20E; }
+  .offer .catalog__prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0px; }
+  .offer .catalog__price {
+    font-family: 'PF DinText Pro';
+    font-size: 16px;
+    color: #000000; }
+    .offer .catalog__price--new {
+      font-weight: bold;
+      margin-right: 12px; }
+    .offer .catalog__price--old {
+      text-decoration: line-through; }
+  .offer .catalog__buy {
+    margin-top: 16px;
+    font-family: 'PF DinText Pro';
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    opacity: .5;
+    display: inline-block; }
+    .offer .catalog__buy::after {
+      content: '';
+      display: block;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: .3s;
+      bottom: -4px; }
+    .offer .catalog__buy:hover {
+      opacity: 1; }
+      .offer .catalog__buy:hover::after {
+        background-color: #000; }
+  .offer .catalog__add {
+    margin-top: 8px;
+    font-family: 'PF DinText Pro';
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding: 3px 12px;
+    padding-right: 3px;
+    background-color: #FFC20E;
+    display: flex;
+    align-items: center; }
+    .offer .catalog__add span {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      display: block;
+      background-color: #fff;
+      background-image: url(../images/basket-two.svg);
+      background-position: center;
+      background-repeat: no-repeat; }
+  .offer .catalog__new {
+    font-family: 'PF DinText Pro';
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #77A361;
+    padding: 4px 12px;
+    padding-bottom: 5px; }
+  .offer .catalog__favorite {
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .offer .catalog__favorite svg {
+      width: 16px;
+      height: 16px; }
+    .offer .catalog__favorite--active svg {
+      fill: #FFC20E; }
+    @media (max-width: 767px) {
+      .offer .catalog__favorite {
+        visibility: visible;
+        opacity: 1; } }
