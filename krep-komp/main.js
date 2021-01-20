@@ -19,11 +19,13 @@ $('.shelf__search').on('click', function(){
 
 
 $('.shelf__hamburger').on('click', function(){
-  $('.mobile').addClass('mobile--active');
+    $('.mobile').addClass('mobile--active');
+    $('body').addClass('body--active');
 });
 
 $('.mobile__close').on('click', function(){
-  $('.mobile').removeClass('mobile--active');
+    $('.mobile').removeClass('mobile--active');
+    $('body').removeClass('body--active');
 });
 
 
@@ -32,6 +34,30 @@ $('.top__catalog').on('click', function(){
   $('.catalog').toggleClass('catalog--active');
   $('body').toggleClass('body--active');
 });
+
+
+
+
+
+$('.mobile__link--catalog').on('click', function(){
+    $('.mobile__ul--main').addClass('mobile__ul--active');
+});
+
+$('.mobile__back--main').on('click', function(){
+    $('.mobile__ul--main').removeClass('mobile__ul--active');
+});
+
+
+$('.mobile__link--parent').on('click', function(){
+    //$('.mobile__ul').removeClass('mobile__ul--active');
+    $(this).next().addClass('mobile__ul--active');
+});
+$('.mobile__back').on('click', function(){
+    $(this).parent().removeClass('mobile__ul--active');
+});
+
+
+
 
 
 $(function() {
