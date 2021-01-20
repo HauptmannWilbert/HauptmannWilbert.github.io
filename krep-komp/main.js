@@ -61,7 +61,7 @@ $('.mobile__back').on('click', function(){
 
 
 $(function() {
-  $(".catalog__wrapper").on("click", ".catalog__link:not(.catalog__link--active)", function() {
+  $(".catalog__wrapper").on("mouseover", ".catalog__link:not(.catalog__link--active)", function() {
     $(this)
       .addClass("catalog__link--active")
       .siblings()
