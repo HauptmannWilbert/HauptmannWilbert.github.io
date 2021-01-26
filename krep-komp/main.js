@@ -192,3 +192,34 @@ $('.hits__list').owlCarousel({
       }
   }
 });
+
+
+$('.recomend__list').owlCarousel({
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    margin:30,
+    nav:true,
+    navContainer: '.recomend__navigation',
+    navText: ['<svg viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1.168l-6 6 6 6" stroke="#552FEC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>','<svg viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.168l6 6-6 6" stroke="#552FEC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'],
+    dots:false,
+    loop:false,
+    autoWidth: true,
+    autoplay:false,
+    autoplayTimeout:5000, 
+    responsive:{ 
+        0:{
+            items:2,
+            autoWidth:false,
+            margin: 0
+        },
+        767:{
+            items:3
+        },
+        1024:{
+            items:5
+        },
+        1280:{
+            items:5
+        }
+    }
+  });
