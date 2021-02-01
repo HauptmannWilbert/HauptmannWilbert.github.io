@@ -75,6 +75,57 @@ $(function() {
 });
 
 
+
+$(function() {
+
+    var $container = $('.table'),
+    scroll = $container.width();
+
+    $('.table__next').hover(function() {
+        $container.animate({
+            'scrollLeft': scroll
+        }, '500');
+    }, function(){
+        $container.stop();
+    });
+
+    $('.table__prev').hover(function() {
+        $container.animate({
+            'scrollLeft': -scroll
+        }, '500');
+    }, function(){
+        $container.stop();
+    });
+
+  });
+
+
+
+  $(window).scroll(function() {
+
+    var scroll = $(window).scrollTop(),
+    topHeigt = $('.top').outerHeight(),
+    arrowHeight = $('.table__prev').outerHeight(),
+    tableHeight = $('.table').outerHeight(),
+    cssTop = $('.table__prev').offset().top - $('.table').offset().top,
+    topTable = $('.table').offset().top - topHeigt,
+    bottomTable = tableHeight + topTable - cssTop / 2;
+
+
+    if ( scroll >= topTable && scroll <= bottomTable) {
+        $('.table__prev').css({
+            'transform' : 'translate(0%, ' + (scroll - topTable)/1 + 'px'
+        });
+
+        $('.table__next').css({
+            'transform' : 'translate(0%, ' + (scroll - topTable )/1 + 'px'
+        });
+    }
+
+});
+
+
+
 $('.slider__main').owlCarousel({
   animateIn: 'fadeIn',
   animateOut: 'fadeOut',
