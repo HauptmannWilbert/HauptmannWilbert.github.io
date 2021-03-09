@@ -228,7 +228,7 @@ $('.recomend__list').owlCarousel({
 
 
   
-
+/*
 $('#big').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -274,7 +274,7 @@ $('#big').slick({
     ]
   });
   
-  
+  */
 
 
   ymaps.ready(init);
