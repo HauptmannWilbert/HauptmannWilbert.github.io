@@ -4570,7 +4570,7 @@ svg {
   height: 100%; }
 
 .table__td a {
-  color: #000000; }
-  
-.table__td a:hover {
   color: #552FEC; }
+
+.table__td a:hover {
+  color: #8c8c8c; }
