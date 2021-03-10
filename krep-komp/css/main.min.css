@@ -4568,3 +4568,9 @@ svg {
 #map--delivery {
   width: 100%;
   height: 100%; }
+
+.table__td a {
+  color: #000000; }
+  
+.table__td a:hover {
+  color: #552FEC; }
