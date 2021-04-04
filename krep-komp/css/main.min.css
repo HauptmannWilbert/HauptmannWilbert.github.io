@@ -3867,6 +3867,7 @@ svg {
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between; }
   @media (max-width: 1023px) {
     .auth__block {
