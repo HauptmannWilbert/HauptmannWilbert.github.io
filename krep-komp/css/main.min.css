@@ -1190,8 +1190,9 @@ svg {
   background: #3A0FB5;
   padding: 0px 25px;
   padding-right: 20px;
-  height: 100vh;
-  min-height: 580px;
+  height: 100%;
+  /*height: 100vh;*/
+  /*min-height: 580px;*/
   overflow: overlay;
   display: flex;
   flex-direction: column;
@@ -1199,6 +1200,9 @@ svg {
   transition: .3s; }
   .mobile--active {
     left: 0px; }
+  .mobile__wrapp {
+    position: static;
+    height: 100%; }
   .mobile__top {
     display: flex;
     padding: 11px 0px; }
@@ -1267,7 +1271,7 @@ svg {
   .mobile__bot {
     margin-left: -25px;
     margin-right: -20px;
-    position: relative; }
+    /*position: relative;*/ }
   .mobile__back {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -1284,6 +1288,7 @@ svg {
     left: -100%;
     width: 100%;
     height: 100%;
+    z-index: 123;
     transition: .3s; }
   .mobile__ul {
     position: absolute;
@@ -1319,13 +1324,15 @@ svg {
       background-image: url(../images/arrow-right-mobile.svg), url(../images/mobile-catalog.svg);
       background-repeat: no-repeat;
       background-position: right 20px center, left 20px center;
-      padding-left: 42px; }
+      padding-left: 42px;
+      position: static; }
     .mobile__item--drop {
       background-image: url(../images/arrow-right-mobile.svg);
       background-repeat: no-repeat;
-      background-position: right 20px center; }
+      background-position: right 20px center;
+      position: static; }
   .mobile__contacts {
-    margin-bottom: 40px; }
+    margin-top: 40px; }
   .mobile__chat {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -4232,8 +4239,7 @@ svg {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.015em;
-  color: #000000;
-  margin-bottom: 4px; }
+  color: #000000; }
   @media (max-width: 767px) {
     .sidebar__name {
       font-size: 16px; } }
@@ -4267,6 +4273,94 @@ svg {
   color: #552FEC;
   display: block;
   margin-top: 6px; }
+
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 0px 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .sidebar__profile {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 0px 20px;
+      padding-bottom: 20px;
+      margin-bottom: 25px; } }
+
+.sidebar__icon {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 68px;
+  height: 68px;
+  background: #552FEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px; }
+  @media (max-width: 767px) {
+    .sidebar__icon {
+      font-size: 16px;
+      color: #FFFFFF;
+      width: 48px;
+      height: 48px; } }
+
+.sidebar__group {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px; }
+  .sidebar__group:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+  .sidebar__group .sidebar__link {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 1px 0px;
+    padding-left: 40px; }
+    .sidebar__group .sidebar__link--orders {
+      background-image: url(../images/settings/basket.svg); }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--orders {
+          background-size: 18px; } }
+    .sidebar__group .sidebar__link--allorders {
+      background-image: url(../images/settings/all.svg);
+      background-position: left 3px center; }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--allorders {
+          background-size: 16px; } }
+    .sidebar__group .sidebar__link--settings {
+      background-image: url(../images/settings/login.svg);
+      background-position: left 3px center; }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--settings {
+          background-size: 14px;
+          background-position: left 5px center; } }
+    .sidebar__group .sidebar__link--org {
+      background-image: url(../images/settings/map.svg); }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--org {
+          background-size: 16px;
+          background-position: left 4px center; } }
+    .sidebar__group .sidebar__link--docs {
+      background-image: url(../images/settings/doc.svg); }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--docs {
+          background-size: 18px;
+          background-position: left 3px center; } }
+    .sidebar__group .sidebar__link--exit {
+      background-image: url(../images/settings/exit.svg);
+      background-position: left 3px center; }
+      @media (max-width: 767px) {
+        .sidebar__group .sidebar__link--exit {
+          background-size: 14px;
+          background-position: left 5px center; } }
 
 .shops__map {
   border-radius: 10px;
@@ -4570,8 +4664,148 @@ svg {
   width: 100%;
   height: 100%; }
 
-.table__td a {
-  color: #552FEC; }
+.profile__topic {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .profile__topic {
+      font-size: 18px;
+      margin-bottom: 20px; } }
 
-.table__td a:hover {
-  color: #8c8c8c; }
+.profile__box {
+  margin-bottom: 24px; }
+  @media (max-width: 767px) {
+    .profile__box {
+      margin-bottom: 20px; } }
+
+.profile__name {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-bottom: 15px; }
+  .profile__name sup {
+    top: 0px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #C94D3F; }
+  @media (max-width: 767px) {
+    .profile__name {
+      font-size: 12px;
+      margin-bottom: 10px; }
+      .profile__name sup {
+        font-size: 12px; } }
+
+.profile__input {
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  border: 1px solid #8C8C8C;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px; }
+  @media (max-width: 767px) {
+    .profile__input {
+      padding: 10px 15px;
+      font-size: 12px !important; } }
+  .profile__input[type="password"] {
+    font: large Verdana,sans-serif;
+    letter-spacing: 1px; }
+  .profile__input--notview {
+    background-image: url(../images/settings/eye-dont.svg);
+    background-position: right 20px center;
+    background-repeat: no-repeat; }
+  .profile__input--success {
+    background-image: url(../images/settings/eye-dont.svg), url(../images/settings/arrow-success.svg);
+    background-position: right 20px center,right 50px center;
+    background-repeat: no-repeat; }
+
+.profile__roster {
+  margin-bottom: 30px; }
+
+.profile__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; }
+  .profile__item:last-child {
+    margin-bottom: 0px; }
+
+.profile__label {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #000000;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .profile__label {
+      font-size: 12px; } }
+
+.profile__checkbox {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #552FEC;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .profile__checkbox:checked:before {
+    content: "";
+    display: block;
+    -webkit-transform: rotateZ(45deg);
+    width: 5px;
+    height: 11px;
+    border: 0 solid #552FEC;
+    border-width: 0 1px 1px 0;
+    pointer-events: none;
+    margin: 0px -1px 3px 0px; }
+  @media (max-width: 767px) {
+    .profile__checkbox {
+      width: 16px;
+      height: 16px; }
+      .profile__checkbox:checked:before {
+        width: 4px;
+        height: 9px;
+        margin: 0px 0px 3px 0px; } }
+
+.profile__button {
+  background: none;
+  border: none;
+  outline: none;
+  background: #552FEC;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 13px 32px;
+  padding-left: 60px;
+  background-image: url(../images/settings/success-white.svg);
+  background-position: left 32px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: .3s; }
+  .profile__button:hover {
+    background-color: #3A0FB5; }
+  @media (max-width: 767px) {
+    .profile__button {
+      font-size: 12px;
+      padding: 10px 20px;
+      padding-left: 40px;
+      background-position: left 18px center;
+      background-size: 14px; } }
