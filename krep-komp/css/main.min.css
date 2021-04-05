@@ -4809,3 +4809,142 @@ svg {
       padding-left: 40px;
       background-position: left 18px center;
       background-size: 14px; } }
+
+@media (max-width: 1199px) {
+  .allorders--transfer {
+    flex-direction: column; }
+    .allorders--transfer .sidebar {
+      margin-bottom: 40px; }
+    .allorders--transfer .contacts__leftside {
+      width: 100%; }
+    .allorders--transfer .contacts__rightside {
+      width: 100%; } }
+
+.allorders__topic {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .allorders__topic {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+
+.allorders__tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border: 2px solid #EAEAEA;
+  border-bottom: none; }
+  .allorders__tr:last-child {
+    border-bottom: 2px solid #EAEAEA; }
+  .allorders__tr--head {
+    border: none; }
+  @media (max-width: 1023px) {
+    .allorders__tr {
+      padding: 25px 20px; } }
+  @media (max-width: 767px) {
+    .allorders__tr {
+      padding: 20px 15px; } }
+
+.allorders__td {
+  width: 100%; }
+  .allorders__td:first-child {
+    max-width: 90px; }
+    @media (max-width: 767px) {
+      .allorders__td:first-child {
+        max-width: none; } }
+  .allorders__td:nth-child(2) {
+    max-width: 100px; }
+    @media (max-width: 767px) {
+      .allorders__td:nth-child(2) {
+        max-width: none; } }
+  .allorders__td:nth-child(3) {
+    max-width: 120px; }
+  .allorders__td:nth-child(4) {
+    max-width: 200px; }
+  .allorders__td:last-child {
+    max-width: 140px; }
+    @media (max-width: 767px) {
+      .allorders__td:last-child {
+        max-width: none; } }
+
+.allorders__table--mobile {
+  display: none; }
+
+@media (max-width: 767px) {
+  .allorders__table {
+    display: none; }
+    .allorders__table--mobile {
+      display: block; } }
+
+.allorders__column {
+  margin-bottom: 25px; }
+  .allorders__column:last-child {
+    margin-bottom: 0px; }
+
+.allorders__name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #8C8C8C; }
+  @media (max-width: 767px) {
+    .allorders__name {
+      font-size: 12px; } }
+
+.allorders__link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  text-decoration-line: underline;
+  color: #552FEC;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .allorders__link {
+      font-size: 12px; } }
+
+.allorders__date {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #000000; }
+  @media (max-width: 767px) {
+    .allorders__date {
+      font-size: 12px; } }
+
+.allorders__price {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #000000; }
+  @media (max-width: 767px) {
+    .allorders__price {
+      font-size: 12px; } }
+
+.allorders__address {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.015em;
+  color: #000000;
+  max-width: 200px; }
+  @media (max-width: 767px) {
+    .allorders__address {
+      font-size: 12px; } }
+
+.allorders__accept {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0.015em;
+  color: #000000; }
+  @media (max-width: 767px) {
+    .allorders__accept {
+      font-size: 12px; } }
