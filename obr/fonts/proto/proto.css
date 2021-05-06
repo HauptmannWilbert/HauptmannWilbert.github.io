@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Proto Grotesk';
+    src: url('ProtoGrotesk-Regular.woff2') format('woff2'),
+        url('ProtoGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="fonts/proto/proto.css">
+    <link rel="stylesheet" href="fonts/museo/museo.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>образовательные системы</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar__wrapper"> 
+      <div class="sidebar__top">
+        <div class="top__hamburger"> <span></span><span></span><span></span></div><a class="sidebar__logo" href="/">
+          <picture class="sidebar__picture sidebar__picture--logo"> <img src="./images/logo.svg" alt="logo" title="logo"><img src="./images/logo-mini.svg" alt="logo" title="logo"></picture></a>
+      </div>
+      <div class="sidebar__menu"> <a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/1.svg"></picture><span>Детский сад</span></a><a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/2.svg"></picture><span>Начальная школа</span></a><a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/3.svg"></picture><span>Средняя и старшая школа</span></a><a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/4.svg"></picture><span>Дополнительное образование</span></a><a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/5.svg"></picture><span>Инклюзивное образование</span></a><a class="sidebar__link" href="/">
+          <picture><img src="./images/menu/6.svg"></picture><span>Средне-специальное образование</span></a></div>
+      <div class="sidebar__list">
+        <div class="sidebar__box"> <a class="sidebar__links">Компьютеры и комплектующие</a></div>
+        <div class="sidebar__box"> <a class="sidebar__links">Моноблоки и системные блоки</a></div>
+        <div class="sidebar__box"> <a class="sidebar__links">Офисная техника</a></div>
+        <div class="sidebar__box"> <a class="sidebar__links">Аудиотехника</a></div>
+      </div>
+    </div>
+    <div class="sidebar__item">
+      <div class="sidebar__topside"> 
+        <div class="sidebar__topic">Компьютеры и комплектующие</div>
+        <div class="sidebar__close"> <span> </span><span> </span></div>
+      </div>
+      <div class="sidebar__roster"> 
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Процессор</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Материнская плата</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Видеокарта</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">ОЗУ</a></div>
+      </div>
+    </div>
+    <div class="sidebar__item">
+      <div class="sidebar__topside"> 
+        <div class="sidebar__topic">Моноблоки и системные блоки</div>
+        <div class="sidebar__close"> <span> </span><span> </span></div>
+      </div>
+      <div class="sidebar__roster"> 
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Моноблоки</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Системные блоки</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Ещё какой-то пункт</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Ещё какой-то пункт</a></div>
+      </div>
+    </div>
+    <div class="sidebar__item">
+      <div class="sidebar__topside"> 
+        <div class="sidebar__topic">Офисная техника</div>
+        <div class="sidebar__close"> <span> </span><span> </span></div>
+      </div>
+      <div class="sidebar__roster"> 
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Принтеры</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Сканеры</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">МФУ</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Ещё какой-то пункт</a></div>
+      </div>
+    </div>
+    <div class="sidebar__item">
+      <div class="sidebar__topside"> 
+        <div class="sidebar__topic">Аудиотехника</div>
+        <div class="sidebar__close"> <span> </span><span> </span></div>
+      </div>
+      <div class="sidebar__roster"> 
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Микрофоны</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Наушники</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Аудиокарты</a></div>
+        <div class="sidebar__element"> <a class="sidebar__ref" href="/">Ещё какой-то пункт</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="top"> 
+      <div class="top__topside">
+        <div class="container"> 
+          <div class="top__wrapper top__wrapper--topside"> 
+            <div class="top__leftside">
+              <div class="top__hamburger"> <span></span><span></span><span></span></div>
+              <div class="top__menu"> 
+                <div class="top__box"> <a class="top__link" href="/">Главная</a></div>
+                <div class="top__box"> <a class="top__link" href="/">О компании</a></div>
+                <div class="top__box"> <a class="top__link" href="/">Доставка</a></div>
+                <div class="top__box"> <a class="top__link" href="/">Нормативные документы</a></div>
+                <div class="top__box"> <a class="top__link" href="/">Контакты</a></div>
+              </div>
+            </div><a class="top__logo" href="/"><img class="top__img" src="./images/logo.svg"></a><a class="top__tel" href="tel:">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.56 480.56">
+                <path d="M365.354 317.9c-15.7-15.5-35.3-15.5-50.9 0-11.9 11.8-23.8 23.6-35.5 35.6-3.2 3.3-5.9 4-9.8 1.8-7.7-4.2-15.9-7.6-23.3-12.2-34.5-21.7-63.4-49.6-89-81-12.7-15.6-24-32.3-31.9-51.1-1.6-3.8-1.3-6.3 1.8-9.4 11.9-11.5 23.5-23.3 35.2-35.1 16.3-16.4 16.3-35.6-.1-52.1-9.3-9.4-18.6-18.6-27.9-28-9.6-9.6-19.1-19.3-28.8-28.8-15.7-15.3-35.3-15.3-50.9.1-12 11.8-23.5 23.9-35.7 35.5-11.3 10.7-17 23.8-18.2 39.1-1.9 24.9 4.2 48.4 12.8 71.3 17.6 47.4 44.4 89.5 76.9 128.1 43.9 52.2 96.3 93.5 157.6 123.3 27.6 13.4 56.2 23.7 87.3 25.4 21.4 1.2 40-4.2 54.9-20.9 10.2-11.4 21.7-21.8 32.5-32.7 16-16.2 16.1-35.8.2-51.8-19-19.1-38.1-38.1-57.2-57.1zM346.254 238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89-25.7-25.7-58.2-41.9-94-46.9l-5.2 37.1c27.7 3.9 52.9 16.4 72.8 36.3 18.8 18.8 31.1 42.6 35.6 68.8zM403.954 77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2 37.1c51.4 7.2 98 30.5 134.8 67.2 34.9 34.9 57.8 79 66.1 127.5l36.9-6.3c-9.7-56.2-36.2-107.2-76.6-147.7z"></path>
+              </svg></a>
+            <div class="top__rightside"> <a class="top__phone" href="tel:">+7 (4822) 111-11-11</a><a class="top__support" href="/">Техническая поддержка</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="top__botside"> 
+        <div class="container"> 
+          <div class="top__wrapper"> 
+            <form class="top__form"> 
+              <select class="top__select">
+                <option class="top__option">Все категории</option>
+              </select>
+              <input class="top__input" type="text">
+              <input class="top__search" type="submit" value="Найти">
+            </form>
+            <div class="top__basket">Корзина</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <!--include sections/card.pug-->
+      <!--include sections/products.pug-->
+      <div class="content">
+        <div class="container"> 
+          <div class="content__wrapper"> 
+            <div class="content__title">Корзина</div>
+            <div class="back">Назад</div>
+            <div class="basket"> 
+              <div class="basket__leftside"> 
+                <div class="basket__list"> 
+                  <div class="basket__box"> 
+                    <div class="basket__left"> 
+                      <div class="basket__photo"><img class="basket__img" src="./images/product.png"></div>
+                      <div class="basket__desc"> 
+                        <div class="basket__category">Проектор</div>
+                        <div class="basket__name">Panasonic PT-EZ770ZE</div>
+                      </div>
+                    </div>
+                    <div class="basket__right"> 
+                      <div class="basket__price">от 12 330 976 ₽</div>
+                      <div class="basket__case"> 
+                        <div class="basket__numbers"> 
+                          <input class="basket__number" type="number" value="1">
+                        </div>
+                        <div class="basket__close">&#215;</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__box"> 
+                    <div class="basket__left"> 
+                      <div class="basket__photo"><img class="basket__img" src="./images/product.png"></div>
+                      <div class="basket__desc"> 
+                        <div class="basket__category">Проектор</div>
+                        <div class="basket__name">Panasonic PT-EZ770ZE</div>
+                      </div>
+                    </div>
+                    <div class="basket__right"> 
+                      <div class="basket__price">от 12 330 976 ₽</div>
+                      <div class="basket__case"> 
+                        <div class="basket__numbers"> 
+                          <input class="basket__number" type="number" value="1">
+                        </div>
+                        <div class="basket__close">&#215;</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__rightside">
+                <form class="form">
+                  <div class="form__title">Оформление заказа</div>
+                  <input class="form__input" type="text" placeholder="Имя контактного лица*">
+                  <input class="form__input" type="text" placeholder="Телефон*">
+                  <textarea class="form__textarea" placeholder="Комментарий (необязательно)"></textarea>
+                  <div class="form__agreed"> 
+                    <input class="form__checked" type="checkbox" checked require>
+                    <div class="form__agreemet">Я даю согласие ООО «Образовательные системы» на обработку моих персональных данных в объеме и на условиях, определенных <a>Положением</a> и <a>офертой</a></div>
+                  </div>
+                  <input class="form__button" type="submit" value="Отправить запрос">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--include sections/slider.pug-->
+      <!--include sections/programms.pug-->
+      <!--include sections/projects.pug-->
+      <!--include sections/news.pug-->
+      <!--include sections/map.pug-->
+      <div class="footer">
+        <div class="container"> 
+          <div class="footer__wrapper"> 
+            <div class="footer__left"> <a class="footer__logo" href="/"><img class="footer__img" src="./images/logo.svg"></a>
+              <div class="footer__bot">
+                <div class="footer__company">ООО - кто что </div>
+                <div class="footer__rights">Все права защенены </div>
+              </div>
+            </div>
+            <div class="footer__center"> 
+              <div class="footer__menu"> 
+                <div class="footer__box"> <a class="footer__link" href="/">Детский сад</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Начальная школа</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Средняя и старшая школа</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Инклюзивное образование</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Дополнительное образование</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Нормативные документы</a></div>
+              </div>
+              <div class="footer__menu"> 
+                <div class="footer__box"> <a class="footer__link" href="/">Главная</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">О компании</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Доставка </a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Контакты</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Тех поддрежка</a></div>
+              </div>
+            </div>
+            <div class="footer__right"> 
+              <div class="footer__agreeds">
+                <div class="footer__agreed">Пользовательское соглашение</div>
+                <div class="footer__agreed">Политика конфиденциальности</div>
+                <div class="footer__agreed">Политика использования cookie</div>
+              </div>
+              <div class="footer__time">Будни с 8:00 - 20:00</div>
+              <div class="footer__socials"> <a class="footer__social">
+                  <svg width="32" height="32" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15.264" stroke="#000" stroke-opacity=".5" stroke-width="1.471"></circle>
+                    <path d="M23.796 12.22c.114-.373 0-.646-.54-.646h-1.789c-.455 0-.662.236-.777.496 0 0-.909 2.178-2.197 3.59-.416.41-.606.54-.833.54-.113 0-.278-.13-.278-.502V12.22c0-.447-.131-.646-.51-.646h-2.81c-.284 0-.456.207-.456.404 0 .423.645.52.71 1.712v2.585c0 .567-.103.67-.331.67-.606 0-2.08-2.186-2.955-4.688-.17-.486-.343-.682-.8-.682H8.443c-.511 0-.613.236-.613.496 0 .466.606 2.772 2.822 5.823 1.478 2.083 3.558 3.212 5.453 3.212 1.136 0 1.276-.25 1.276-.683v-1.574c0-.502.109-.603.468-.603.264 0 .72.132 1.78 1.135 1.212 1.19 1.413 1.724 2.094 1.724h1.787c.51 0 .766-.25.62-.745-.162-.493-.74-1.21-1.509-2.058-.417-.483-1.041-1.004-1.231-1.264-.265-.336-.188-.484 0-.782 0 0 2.179-3.012 2.405-4.036z" fill="#000" fill-opacity=".5"></path>
+                  </svg></a><a class="footer__social">
+                  <svg width="33" height="32" fill="none" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16.4" cy="16" r="15.264" stroke="#000" stroke-opacity=".5" stroke-width="1.471"></circle>
+                    <path d="M22.625 12.852c.01.138.01.275.01.412 0 4.187-3.187 9.012-9.011 9.012a8.95 8.95 0 01-4.864-1.423c.254.03.5.04.765.04 1.48 0 2.843-.5 3.932-1.354a3.174 3.174 0 01-2.962-2.196 3.37 3.37 0 001.433-.059 3.166 3.166 0 01-2.54-3.108v-.04c.422.236.912.383 1.43.402a3.163 3.163 0 01-1.411-2.637c0-.588.156-1.128.43-1.598a9.009 9.009 0 006.532 3.314 3.596 3.596 0 01-.079-.725 3.166 3.166 0 013.167-3.168c.913 0 1.736.383 2.315 1a6.255 6.255 0 002.01-.765 3.162 3.162 0 01-1.393 1.746 6.349 6.349 0 001.823-.49 6.8 6.8 0 01-1.587 1.637z" fill="#000" fill-opacity=".5"></path>
+                  </svg></a><a class="footer__social">
+                  <svg width="33" height="32" fill="none" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16.2" cy="16" r="15.264" stroke="#000" stroke-opacity=".5" stroke-width="1.471"></circle>
+                    <path d="M17.313 23.167v-6.528h2.202l.327-2.555h-2.53v-1.628c0-.738.206-1.243 1.264-1.243h1.342V8.935a17.788 17.788 0 00-1.965-.102c-1.947 0-3.283 1.189-3.283 3.37v1.876h-2.188v2.555h2.193v6.533h2.637z" fill="#000" fill-opacity=".5"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <script src="./jquery-3.3.1.min.js"></script>
+      <script src="./owl.carousel.min.js"></script>
+      <script src="./slick.min.js"></script>
+      <script src="./main.js"></script>
+</body>
+</html>
