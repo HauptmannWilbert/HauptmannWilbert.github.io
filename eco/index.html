@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="fonts/ptsans/ptsans.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Ecostercus</title>
+</head>
+<body>
+
+  <div class="page" id="page">
+    <div class="top"> 
+      <div class="container"> 
+        <div class="top__wrapper"> 
+          <div class="top__left"> 
+            <div class="top__hamburger"> <span> </span><span> </span><span></span></div><a class="top__logo" href="/"><img class="top__images" src="./images/logo.svg" alt="logo" title="logo"></a><a class="top__tel" href="tel:8 800 444-15-64"></a>
+          </div>
+          <div class="top__menu"> 
+            <div class="top__box"> <a class="top__link" href="/">О компании</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Комплексы компостирования</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Реализованные проекты</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Информация</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Контакты</a></div>
+          </div>
+          <div class="top__right"><a class="top__phone" href="tel:88004441564">8 800 444-15-64</a><a class="top__email" href="mailto:ecostercus@yandex.ru">ecostercus@yandex.ru</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner"> 
+      <video class="banner__video" preload="metadata" loop="loop" muted="muted" autoplay="autoplay">
+        <source class="banner__source" type="video/mp4" src="./images/video.mp4">
+      </video>
+      <div class="container"> 
+        <div class="banner__wrapper"> 
+          <div class="banner__block"> 
+            <div class="banner__title">ТЕХНОЛОГИЯ ПЕРЕРАБОТКИ ОРГАНИЧЕСКИХ ОТХОДОВ</div>
+            <div class="banner__desc">Надёжные и эффективные системные компоненты</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about"> 
+      <div class="container"> 
+        <div class="about__wrapper"> 
+          <div class="about__leftside"> <a class="about__box" href="/"><img class="about__img" src="./images/1.png">
+              <div class="about__name">СТАЦИОНАРНЫЕ КОМПЛЕКСЫ</div></a><a class="about__box" href="/"><img class="about__img" src="./images/2.png">
+              <div class="about__name">МОБИЛЬНЫЕ БИОРЕАКТОРЫ</div></a></div>
+          <div class="about__rightside"> 
+            <div class="about__title">КОМПЛЕКСЫ МЕМБРАННОГО КОМПОСТИРОВАНИЯ</div>
+            <div class="about__ul"> 
+              <div class="about__li">Успешная эксплуатация в более чем 20-ти странах с разным климатом</div>
+              <div class="about__li">Модульная расширяемость от 10 тысяч до 1 миллиона тонн в год</div>
+              <div class="about__li">Возможность переработки любого органического материала</div>
+              <div class="about__li">Неприятные запахи практически отсутствуют (снижены на 97%)</div>
+              <div class="about__li">Кратчайший технологический интервал (6-8 недель)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plus"> 
+      <div class="container"> 
+        <div class="plus__wrapper"> 
+          <div class="plus__list"> 
+            <div class="plus__box"> 
+              <div class="plus__name">> 100 ЗАВОДОВ</div>
+              <div class="plus__desc">по всему миру</div>
+            </div>
+            <div class="plus__box"> 
+              <div class="plus__name">4 ЗАВОДА</div>
+              <div class="plus__desc">на территории России</div>
+            </div>
+            <div class="plus__box"> 
+              <div class="plus__name">> 20 ЛЕТ</div>
+              <div class="plus__desc">успешного опыта</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map"> 
+      <div id="map"> </div>
+    </div>
+    <div class="contacts"> 
+      <div class="container"> 
+        <div class="contacts__wrapper">
+          <div class="contacts__leftside"> 
+            <div class="contacts__title">ООО «ЭКОСТЕРКУС»</div>
+            <div class="contacts__inn">ИНН 5047247122</div>
+            <div class="contacts__block"> 
+              <div class="contacts__left"> <a class="contacts__phone" href="tel:88004441564">8 800 444-15-64</a><a class="contacts__email" href="mailto:ecostercus@yandex.ru">ecostercus@yandex.ru</a>
+                <div class="contacts__address">Московская область, г. Химки, Транспортный проезд, дом 2, пом. 2.22 (технопарк «Аврора»)</div>
+                <div class="contacts__socials"> <a class="contacts__link" href="/">
+                    <svg class="contacts__svg--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 16">
+                      <path d="M4.982 15.875H1.66V7.938H0V5.202h1.66V3.56C1.66 1.327 2.599 0 5.26 0h2.216v2.736H6.09c-1.038 0-1.105.382-1.105 1.095l-.003 1.371h2.51l-.294 2.736H4.982v7.937z"></path>
+                    </svg></a><a class="contacts__link" href="/">
+                    <svg class="contacts__svg--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 11">
+                      <path d="M9.749 10.839h1.11s.336-.037.51-.219c.155-.165.152-.483.152-.483s-.02-1.472.67-1.689c.682-.213 1.556 1.424 2.487 2.055.701.477 1.235.37 1.235.37l2.482-.032s1.3-.08.685-1.088c-.05-.083-.36-.746-1.847-2.112-1.556-1.427-1.348-1.198.528-3.667 1.142-1.504 1.6-2.422 1.456-2.816-.137-.374-.976-.273-.976-.273L15.446.9s-.208-.026-.362.063c-.151.09-.248.297-.248.297s-.44 1.164-1.032 2.154c-1.246 2.09-1.742 2.198-1.945 2.071-.474-.303-.353-1.215-.353-1.863 0-2.024.312-2.869-.604-3.088-.304-.071-.53-.119-1.306-.128C8.6.397 7.753.41 7.276.642c-.319.153-.564.498-.413.516.184.026.602.112.823.412.289.384.277 1.25.277 1.25s.166 2.383-.384 2.677c-.378.202-.893-.211-2.003-2.106-.571-.97-.999-2.041-.999-2.041s-.083-.2-.23-.31a1.15 1.15 0 00-.432-.17L1.26.886s-.4.01-.547.182c-.128.155-.01.467-.01.467s2.08 4.81 4.436 7.231c2.16 2.222 4.61 2.077 4.61 2.077v-.004z"></path>
+                    </svg></a><a class="contacts__link" href="/">
+                    <svg class="contacts__svg--skype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15">
+                      <path d="M14.729 8.815c.069-.391.106-.796.106-1.207 0-3.84-3.134-6.954-6.996-6.954-.415 0-.82.035-1.214.105a4.13 4.13 0 00-2.02-.542h-.061C2.254.227.403 2.073.403 4.35A4.1 4.1 0 00.95 6.4a6.976 6.976 0 00-.106 1.208c0 3.84 3.133 6.953 6.995 6.953.415 0 .82-.037 1.214-.104a4.146 4.146 0 002.063.543c2.296 0 4.16-1.85 4.16-4.134a4.1 4.1 0 00-.547-2.05zm-6.864 3.24c-2.484 0-3.62-1.25-3.62-2.169 0-.47.373-.795.85-.795 1.061 0 .786 1.576 2.768 1.576 1.016 0 1.61-.604 1.61-1.17 0-.342-.196-.72-.866-.886l-2.21-.553c-1.78-.448-2.093-1.426-2.093-2.334 0-1.883 1.743-2.563 3.405-2.563 1.529 0 3.347.832 3.347 1.964 0 .483-.41.748-.889.748-.907 0-.757-1.262-2.584-1.262-.908 0-1.388.419-1.388 1.01 0 .588.701.789 1.324.93l1.637.364c1.79.4 2.27 1.439 2.27 2.427 0 1.533-1.2 2.713-3.565 2.713h.004z"></path>
+                    </svg></a><a class="contacts__link" href="/">
+                    <svg class="contacts__svg--twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13">
+                      <path d="M5.367 12.977c5.919 0 9.154-4.844 9.154-9.047 0-.138-.002-.274-.01-.411a6.468 6.468 0 001.606-1.647 6.422 6.422 0 01-1.847.5A3.203 3.203 0 0015.685.613a6.537 6.537 0 01-2.043.772A3.235 3.235 0 0011.293.38c-1.776 0-3.219 1.424-3.219 3.18 0 .25.028.493.084.725A9.17 9.17 0 011.525.962a3.138 3.138 0 00-.435 1.6 3.17 3.17 0 001.432 2.645 3.205 3.205 0 01-1.458-.397.281.281 0 00-.002.04c0 1.54 1.11 2.827 2.58 3.12a3.299 3.299 0 01-1.451.052 3.22 3.22 0 003.006 2.21 6.513 6.513 0 01-3.996 1.36 6.63 6.63 0 01-.768-.043 9.185 9.185 0 004.934 1.428z"></path>
+                    </svg></a><a class="contacts__link" href="/">
+                    <svg class="contacts__svg--youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 13">
+                      <path d="M5.844.665C4.82.715 3.8.745 2.783.875c-1.278.16-2 .838-2.217 2.091-.375 2.19-.422 5.656.058 7.812.212.955.883 1.591 1.852 1.766.446.082.896.13 1.346.158 3.692.244 8.153.325 11.814-.105 1.177-.138 1.904-.816 2.12-1.966.136-.702.195-1.419.232-2.132.097-1.812.086-3.616-.184-5.41-.21-1.382-.92-2.041-2.317-2.214-1.034-.127-2.075-.162-3.116-.21a70.291 70.291 0 00-6.527.002V.665zM7.428 4.13c1.536.873 3.042 1.728 4.597 2.608-1.544.878-3.057 1.736-4.597 2.613V4.13z"></path>
+                    </svg></a><a class="contacts__link" href="/">
+                    <svg class="contacts__svg--inst" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.416 1.571h6.376c1.555 0 2.829 1.259 2.829 2.795v6.301c0 1.536-1.274 2.793-2.829 2.793H4.416c-1.555 0-2.827-1.257-2.827-2.793V4.366c0-1.536 1.272-2.795 2.827-2.795zM7.46.209H4.414l-.106.002h-.002L4.2.215h-.002l-.106.007-.106.01h-.002L3.88.243h-.002L3.776.26h-.002l-.102.017-.102.02-.103.022-.1.024h-.002l-.1.027-.099.03-.097.03h-.001L2.97.464 2.874.5 2.78.538l-.093.04-.09.045h-.003c-.06.03-.12.06-.18.092l-.09.05-.088.05-.086.056-.086.055-.083.057-.082.06-.08.061v.002l-.078.063-.078.064-.075.066-.074.068-.072.07-.071.072-.069.073-.067.075-.067.078-.063.077-.061.079-.06.08-.058.083-.055.083-.056.085-.052.086-.05.088c-.032.059-.064.118-.093.18l-.045.09v.002l-.041.092-.039.094-.037.093v.002l-.034.094v.002l-.031.095-.03.1-.026.099-.026.099-.022.101v.002l-.019.101-.019.101v.002l-.014.101v.002l-.013.105-.01.104v.002l-.007.105-.004.105v.001L.2 4.377v6.301l.002.105v.002l.004.104v.002l.007.105v.002l.01.105v.002l.013.102v.002l.014.101v.002l.019.101.019.101.022.101.026.1v.001l.026.1.03.097.031.096v.001l.034.096.037.095.039.094.041.092.045.09v.002c.03.06.061.12.093.178l.05.088.052.089.056.084.055.085.058.082.06.081.06.08.064.076.067.076.067.075.069.074.07.071.073.068.074.068.075.066.078.065.078.062.08.06.082.06.083.057.086.055.086.055.089.051.09.05c.059.031.118.063.18.092h.001l.091.044.093.04.095.037.097.037.097.035h.001l.097.031.099.03.1.025h.002l.1.026.103.02.102.02.102.017h.002l.102.015h.002l.104.012h.002l.106.01.106.007H4.2l.106.004h.002l.106.002H10.79l.108-.002h.002l.106-.004.106-.007h.002l.106-.01.106-.012.104-.015h.002l.102-.017.102-.02h.002l.103-.02.1-.026.1-.025.099-.03h.002l.096-.031h.002l.095-.035h.002l.095-.037.095-.037.093-.04h.002l.09-.044c.062-.03.123-.06.183-.092l.09-.05.087-.051.085-.055.084-.055.083-.057.082-.06.08-.06.078-.062.078-.065.077-.066.074-.068.072-.068.071-.071.069-.074.067-.075.065-.075.063-.078h.002l.062-.079.06-.08.059-.083.055-.085.054-.084.052-.088.05-.089c.032-.059.064-.117.094-.178v-.002l.044-.09.041-.092.039-.094.037-.095.034-.096v-.001l.031-.096.03-.097.028-.1v-.001l.024-.1.022-.1.02-.102.018-.1v-.003l.014-.1v-.003l.013-.103v-.001l.01-.105v-.002l.007-.105v-.002l.004-.104v-.002l.002-.105V4.377l-.002-.107V4.27L15 4.164l-.007-.105v-.002l-.01-.104-.013-.105v-.002l-.014-.101v-.002l-.017-.101-.02-.101v-.002l-.023-.101-.024-.1-.028-.098-.03-.1-.031-.095v-.002l-.034-.094v-.002l-.037-.093-.039-.094-.04-.092v-.002l-.045-.09c-.03-.062-.062-.12-.093-.18l-.05-.088-.053-.086-.054-.085-.055-.083-.058-.082-.061-.081-.062-.08H14.1l-.063-.076-.065-.078-.067-.075-.069-.073-.07-.072-.073-.07-.074-.068-.077-.066-.078-.064-.078-.063v-.002l-.08-.06-.082-.061-.083-.057-.084-.055-.085-.055-.088-.052-.09-.05a4.203 4.203 0 00-.181-.091l-.091-.044h-.002l-.093-.04-.095-.04-.095-.036h-.002L12.14.43h-.002l-.096-.031h-.002l-.099-.03-.1-.027-.1-.024-.103-.022h-.002l-.102-.02-.102-.017h-.002l-.104-.015-.106-.013-.106-.009h-.002l-.106-.007L10.9.21h-.002L10.79.21H7.458h.002zm.145 4.89c1.35 0 2.445 1.083 2.445 2.417 0 1.334-1.095 2.418-2.445 2.418-1.35 0-2.447-1.082-2.447-2.418 0-1.334 1.095-2.417 2.447-2.417zm0-1.363c2.112 0 3.825 1.692 3.825 3.78 0 2.087-1.71 3.78-3.825 3.78-2.113 0-3.825-1.693-3.825-3.78 0-2.088 1.712-3.78 3.825-3.78zm3.925-.972c.488 0 .882.39.882.87a.876.876 0 01-.882.872.876.876 0 01-.881-.871c0-.482.394-.871.881-.871z"></path>
+                    </svg></a></div>
+              </div>
+              <div class="contacts__right"> 
+                <div class="contacts__button">Заказать звонок</div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__rightside">
+            <form class="form">
+              <div class="form__wrapper">
+                <div class="form__title">Напишите нам</div>
+                <div class="form__body"> 
+                  <input class="form__input" type="text" placeholder="Ваше имя*">
+                  <input class="form__input" type="text" placeholder="Ваш телефон">
+                  <input class="form__input" type="text" placeholder="Ваш e-mail*">
+                  <textarea class="form__textarea" placeholder="Ваше сообщение*"></textarea>
+                  <div class="form__bot"> 
+                    <div class="form__left"> 
+                      <input class="form__check" id="checked-one" type="checkbox" checked>
+                      <label class="form__label" for="checked-one">Я принимаю условия<br><a>соглашения о конфиденциальности</a></label>
+                    </div>
+                    <div class="form__right"> 
+                      <input class="form__button" type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__topside">
+        <div class="container"> 
+          <div class="footer__wrapper"> 
+            <div class="footer__top"> 
+              <div class="footer__company">© Ecostercus Ltd.</div>
+              <div class="footer__list"> 
+                <div class="footer__box"> <a class="footer__link" href="/">О компании</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Технология компостирования</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Реализованные проекты</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Информация</a></div>
+                <div class="footer__box"> <a class="footer__link" href="/">Контакты</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__botside">
+        <div class="container">
+          <div class="footer__wrapper"> 
+            <div class="footer__bot">
+              <div class="footer__rights">© 2021 ВСЕ ПРАВА ЗАЩИЩЕНЫ</div><a class="footer__politics" href="/">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="./slick.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
