@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="fonts/montserrat/montserrat.css">
+    <link rel="stylesheet" href="fonts/inter/inter.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Shuba</title>
+</head>
+<body>
+
+  <div class="modal" id="modalPodbor"> 
+    <div class="modal__wrapper">
+      <div class="modal__close" data-fancybox-close></div>
+      <div class="modal__success">
+        <div class="modal__textone">Данные успешно отправлены</div>
+        <div class="modal__texttwo">Наш продавец сделает для Вас подбор шуб и перезвонит</div>
+      </div>
+      <div class="modal__main">
+        <h4 class="modal__title">Подбор шубой</h4>
+        <div class="modal__text">Оставьте заявку и получите <b>дополнительную скидку 5%.</b></div>
+        <select class="modal__selects" id="select__one">
+          <option value disabled selected>Выберите вид меха</option>
+          <option>Норка</option>
+          <option>Мутон</option>
+          <option>Нутрия</option>
+          <option>Стриженная нутрия</option>
+          <option>Каракауль</option>
+          <option>Не знаю</option>
+        </select>
+        <select class="modal__selects" id="select__two">
+          <option value disabled selected>Выберите длину</option>
+          <option>Куртка (до 79 см)</option>
+          <option>Полупальто (80-104 см)</option>
+          <option>Пальто (> 105 см)</option>
+          <option>Не знаю</option>
+        </select>
+        <div class="modal__row">
+          <div class="modal__box"> 
+            <div class="modal__name">Цвет</div>
+            <div class="modal__list"> 
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_one" id="value_1">
+                <label class="modal__label" for="value_1">Светлая</label>
+              </div>
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_one" id="value_2">
+                <label class="modal__label" for="value_2">Темная</label>
+              </div>
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_one" id="value_3">
+                <label class="modal__label" for="value_3">Не знаю</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal__box"> 
+            <div class="modal__name">Комплектация</div>
+            <div class="modal__list modal__list--two">
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_two" id="value_5">
+                <label class="modal__label" for="value_5">Воротник</label>
+              </div>
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_two" id="value_6">
+                <label class="modal__label" for="value_6">Капюшон</label>
+              </div>
+              <div class="modal__item">
+                <input class="modal__radius" type="radio" name="value_two" id="value_7">
+                <label class="modal__label" for="value_7">Не знаю</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__box"> 
+          <div class="modal__name">Размер</div>
+          <div class="modal__slider"></div>
+          <div class="modal__values"> 
+            <div class="modal__min"> </div>
+            <div class="modal__max"></div>
+          </div>
+        </div>
+        <input class="modal__input" type="text" placeholder="Ваш телефон">
+        <input class="modal__input" type="text" placeholder="Ваше имя">
+        <input class="modal__button" type="submit" value="Подобрать">
+        <div class="modal__politics">Отправляя данные, вы принимаете условия <a href="/" target="_blank">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modalOpen">
+    <div class="modal__wrapper">
+      <div class="modal__close" data-fancybox-close></div>
+      <div class="modal__success">
+        <div class="modal__textone">Данные успешно отправлены</div>
+        <div class="modal__texttwo">Наш продавец сделает для Вас подбор шуб и перезвонит</div>
+      </div>
+      <div class="modal__main">
+        <h4 class="modal__title">Мы напомним вам об открытии ярмарки!</h4>
+        <div class="modal__text">Просто оставьте нам свои контактные данные, мы позвоним и напомним вам за 1 день до открытия ярмарки.</div>
+        <input class="modal__input" type="text" placeholder="Ваш телефон">
+        <input class="modal__input" type="text" placeholder="E-mail">
+        <input class="modal__input" type="text" placeholder="Ваше имя">
+        <input class="modal__button" type="submit" value="Напомнить мне">
+        <div class="modal__politics">Отправляя данные, вы принимаете условия <a href="/" target="_blank">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных</div>
+      </div>
+    </div>
+  </div>
+  <div class="top"> 
+    <div class="container"> 
+      <div class="top__wrapper"> <a class="top__logo" href="/"><img class="top__img" src="./images/logo.png"></a>
+        <div class="top__rightside"> 
+          <div class="top__desc">1 - 8 АПРЕЛЯ 2021 | Гостиница "Октябрьская", 2 этаж</div><a class="top__tel" href="tel:88002226392">8 800 222 63 92</a>
+          <div class="top__socials"> <a class="top__social" href="/">
+              <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15zm6.505 16.983c.118.146.399.43.843.854h.01l.01.01.01.01.022.02c.978.91 1.64 1.677 1.988 2.301.02.034.043.078.067.13.024.052.049.144.073.276a.813.813 0 01-.005.354c-.028.103-.114.2-.26.286-.146.087-.35.13-.614.13l-2.665.042c-.166.035-.36.017-.583-.052a2.548 2.548 0 01-.54-.229l-.21-.125a4.869 4.869 0 01-.728-.666 18.433 18.433 0 01-.713-.807c-.197-.24-.41-.44-.635-.604-.226-.163-.421-.216-.588-.16a.839.839 0 00-.083.036 1.333 1.333 0 00-.4.458 2.139 2.139 0 00-.178.54c-.052.24-.075.51-.068.808 0 .103-.012.2-.036.286a.7.7 0 01-.078.192l-.042.052c-.125.132-.309.208-.551.23h-1.197c-.493.027-1-.03-1.52-.172a5.818 5.818 0 01-1.368-.552c-.393-.225-.75-.454-1.072-.687a6.206 6.206 0 01-.734-.598l-.26-.25a6.592 6.592 0 01-.286-.313c-.122-.138-.37-.454-.744-.947a25.888 25.888 0 01-1.104-1.571 32.009 32.009 0 01-1.275-2.196 34.308 34.308 0 01-1.358-2.831.827.827 0 01-.063-.28c0-.077.01-.133.032-.168l.041-.062c.104-.132.302-.198.594-.198l2.851-.02c.084.013.163.036.24.067.076.031.132.06.166.088l.052.032a.689.689 0 01.25.333c.139.347.299.706.479 1.077s.323.654.427.848l.166.302c.201.416.396.777.583 1.083.188.305.355.543.505.713.149.17.293.303.432.4.139.098.257.146.354.146.097 0 .19-.017.28-.052a.184.184 0 00.053-.052c.02-.027.062-.104.125-.23a1.69 1.69 0 00.14-.488c.032-.201.065-.482.1-.843a8.109 8.109 0 000-1.3 4.882 4.882 0 00-.094-.76 2.016 2.016 0 00-.146-.48l-.063-.124c-.173-.236-.468-.385-.884-.448-.09-.013-.073-.097.052-.25.118-.131.25-.235.395-.312.368-.18 1.197-.263 2.488-.25.569.007 1.037.052 1.405.136.139.034.255.081.348.14a.56.56 0 01.214.25c.048.107.085.218.11.333a2.4 2.4 0 01.036.473c0 .201-.004.393-.01.573-.008.18-.016.425-.026.733-.01.31-.016.596-.016.86 0 .076-.004.221-.01.436-.008.215-.01.382-.006.5.003.118.016.258.036.421.021.163.061.299.12.406a.686.686 0 00.234.255l.177.042c.063.014.153-.024.27-.115a3.8 3.8 0 00.396-.359c.146-.148.326-.38.541-.697.215-.315.451-.688.708-1.119a16.96 16.96 0 001.114-2.342.704.704 0 01.104-.182.46.46 0 01.114-.11l.042-.03c.013-.008.03-.016.052-.027a.85.85 0 01.344-.036l2.997-.021c.27-.034.492-.026.666.026.173.052.28.11.323.172l.062.104c.16.444-.36 1.463-1.56 3.06-.168.222-.393.517-.677.884-.542.695-.854 1.149-.936 1.365-.119.284-.07.565.145.842z"></path>
+              </svg></a><a class="top__social" href="/">
+              <svg viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.671 11.935c1.446 0 2.617-1.133 2.617-2.532 0-1.4-1.171-2.533-2.617-2.533-1.445 0-2.617 1.134-2.617 2.533s1.172 2.532 2.617 2.532z"></path>
+                <path d="M15.5 0C6.94 0 0 6.716 0 15c0 8.284 6.94 15 15.5 15C24.06 30 31 23.284 31 15c0-8.284-6.94-15-15.5-15zm.171 4.254c2.938 0 5.32 2.305 5.32 5.149 0 2.843-2.382 5.148-5.32 5.148s-5.32-2.305-5.32-5.148c0-2.844 2.382-5.149 5.32-5.149zm4.73 13.265c-1.132.703-2.682.969-3.695 1.07l.848.82 3.135 3.033a1.154 1.154 0 010 1.67l-.144.139a1.249 1.249 0 01-1.725 0l-3.135-3.034-3.135 3.034a1.25 1.25 0 01-1.726 0l-.143-.14a1.154 1.154 0 010-1.669l3.135-3.034.844-.817c-1.011-.099-2.578-.364-3.719-1.072-1.335-.83-1.927-1.322-1.403-2.34.3-.584 1.132-1.07 2.238-.226 1.494 1.139 3.895 1.139 3.895 1.139s2.4 0 3.895-1.14c1.105-.843 1.937-.357 2.238.227.523 1.019-.068 1.51-1.404 2.34z"></path>
+              </svg></a><a class="top__social" href="/">
+              <svg viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 0C6.94 0 0 6.716 0 15c0 8.284 6.94 15 15.5 15C24.06 30 31 23.284 31 15c0-8.284-6.94-15-15.5-15zm4.554 8.598h-2.215c-.466-.03-.947.315-1.032.766-.01.78-.005 1.561-.005 2.342 1.082.005 2.165 0 3.247.005a42.033 42.033 0 01-.395 3.37c-.958.01-1.915 0-2.872.005-.01 3.332.005 6.658-.005 9.99-1.423.005-2.841-.005-4.264.005-.025-3.331 0-6.663-.015-9.995-.692-.005-1.388.005-2.08-.005.005-1.12 0-2.24 0-3.355.692-.01 1.388 0 2.08-.005.02-1.086-.02-2.177.02-3.264.075-.868.41-1.736 1.077-2.332.807-.742 1.95-.994 3.032-1.024 1.142-.01 2.285-.004 3.427-.004a416.95 416.95 0 010 3.5z"></path>
+              </svg></a><a class="top__social" href="/">
+              <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.909 7.443h-7.892a3.586 3.586 0 00-3.581 3.582v7.964a3.586 3.586 0 003.581 3.581h7.892a3.586 3.586 0 003.581-3.581v-7.964a3.586 3.586 0 00-3.581-3.582zm-3.931 12.332c-2.677 0-4.855-2.154-4.855-4.802 0-2.649 2.178-4.803 4.855-4.803 2.676 0 4.854 2.154 4.854 4.803 0 2.648-2.177 4.802-4.854 4.802zm4.94-8.66a1.142 1.142 0 110-2.284 1.142 1.142 0 010 2.285z"></path>
+                <path d="M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15zm9.262 18.989a5.36 5.36 0 01-5.354 5.353h-7.891a5.36 5.36 0 01-5.353-5.353v-7.964a5.36 5.36 0 015.353-5.353h7.892a5.36 5.36 0 015.353 5.353v7.964z"></path>
+                <path d="M14.978 11.938c-1.702 0-3.086 1.361-3.086 3.034 0 1.674 1.384 3.035 3.086 3.035s3.086-1.361 3.086-3.035c0-1.673-1.384-3.034-3.086-3.034z"></path>
+              </svg></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="page">
+    <div class="banner"> 
+      <div class="container"> 
+        <div class="banner__wrapper"> 
+          <div class="banner__leftside"> 
+            <h1>Выставка-продажа шуб в Магнитогорске. <b>Только 5 дней!</b></h1>
+            <p>СКИДКИ 20% на ВСЁ и ПАЛЬТО в ПОДАРОК!</p><a class="banner__button" data-fancybox data-src="#modalPodbor">Подобрать шубу</a>
+          </div>
+          <div class="banner__rightside">
+            <div class="banner__box"> <img class="banner__img" src="./images/фото1.png"></div><a class="banner__button" data-fancybox data-src="#modalPodbor">Подобрать шубу</a>
+          </div><a class="banner__arrow" href="#time"></a>
+        </div>
+      </div>
+    </div>
+    <div class="time" id="time">
+      <div class="container"> 
+        <div class="time__wrapper"> 
+          <div class="time__list">
+            <div class="time__box"> 
+              <div class="time__topic">Дата</div>
+              <div class="time__name">1-8 апреля</div>
+            </div>
+            <div class="time__box"> 
+              <div class="time__topic">Место</div>
+              <div class="time__name">Гостиница "Октябрьская"</div>
+            </div>
+            <div class="time__box"> 
+              <div class="time__topic">Время</div>
+              <div class="time__name">10:00-20:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about"> 
+      <div class="container"> 
+        <div class="about__wrapper"> 
+          <div class="about__topside">
+            <div class="about__left"> 
+              <h2>Получите дополнительную скидку 5%</h2>
+              <p>Тверская меховая ярмарка подберет Вам шубу Вашей мечты и подарит скидку 5%! Оставьте заявку на подбор шубы, ответьте на пару вопросов и приходите на выставку-продажу "Тверской меховой" в Вашем городе.</p>
+            </div>
+            <div class="about__right"> <img class="about__img" src="./images/фото2.png"></div>
+          </div>
+          <div class="about__botside">
+            <div class="about__leftside"> 
+              <p>Так же вы можете заказать доставку подобранных шуб на дом в дни проведения выставки в вашем городе или заказать доставку на дом.</p>
+              <p>При покупке покажите смс на кассе и получите дополнительную скидку 5%.</p><a class="about__button" data-fancybox data-src="#modalPodbor">Подобрать шубу</a>
+            </div>
+            <div class="about__rightside"><img class="about__img" src="./images/фото3.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular"> 
+      <div class="container"> 
+        <div class="popular__wrapper"> 
+          <h2>Популярные модели шуб</h2>
+          <div class="popular__list"> 
+            <div class="popular__box"> 
+              <div class="popular__top"> 
+                <div class="popular__category popular__category--new">Новинка</div><a class="popular__link" href="/"><img class="popular__img" src="./images/collection/1.png"></a>
+              </div>
+              <div class="popular__center"> <a class="popular__name" href="/">Пальто «Сабрина»</a>
+                <div class="popular__prices"> 
+                  <div class="popular__price">от 24 000 руб.</div>
+                  <div class="popular__price popular__price--old">30 000 руб.</div>
+                </div>
+              </div>
+              <div class="popular__bottom"> <a class="popular__button" href="/">Подробнее</a></div>
+            </div>
+            <div class="popular__box"> 
+              <div class="popular__top"> 
+                <div class="popular__category popular__category--new">Новинка</div><a class="popular__link" href="/"><img class="popular__img" src="./images/collection/1.png"></a>
+              </div>
+              <div class="popular__center"> <a class="popular__name" href="/">Пальто «Сабрина»</a>
+                <div class="popular__prices"> 
+                  <div class="popular__price">от 24 000 руб.</div>
+                  <div class="popular__price popular__price--old">30 000 руб.</div>
+                </div>
+              </div>
+              <div class="popular__bottom"> <a class="popular__button" href="/">Подробнее</a></div>
+            </div>
+            <div class="popular__box"> 
+              <div class="popular__top"> 
+                <div class="popular__category popular__category--new">Новинка</div><a class="popular__link" href="/"><img class="popular__img" src="./images/collection/1.png"></a>
+              </div>
+              <div class="popular__center"> <a class="popular__name" href="/">Пальто «Сабрина»</a>
+                <div class="popular__prices"> 
+                  <div class="popular__price">от 24 000 руб.</div>
+                  <div class="popular__price popular__price--old">30 000 руб.</div>
+                </div>
+              </div>
+              <div class="popular__bottom"> <a class="popular__button" href="/">Подробнее</a></div>
+            </div>
+            <div class="popular__box"> 
+              <div class="popular__top"> 
+                <div class="popular__category popular__category--new">Новинка</div><a class="popular__link" href="/"><img class="popular__img" src="./images/collection/1.png"></a>
+              </div>
+              <div class="popular__center"> <a class="popular__name" href="/">Пальто «Сабрина»</a>
+                <div class="popular__prices"> 
+                  <div class="popular__price">от 24 000 руб.</div>
+                  <div class="popular__price popular__price--old">30 000 руб.</div>
+                </div>
+              </div>
+              <div class="popular__bottom"> <a class="popular__button" href="/">Подробнее</a></div>
+            </div>
+            <div class="popular__box"> 
+              <div class="popular__top"> 
+                <div class="popular__category popular__category--new">Новинка</div><a class="popular__link" href="/"><img class="popular__img" src="./images/collection/1.png"></a>
+              </div>
+              <div class="popular__center"> <a class="popular__name" href="/">Пальто «Сабрина»</a>
+                <div class="popular__prices"> 
+                  <div class="popular__price">от 24 000 руб.</div>
+                  <div class="popular__price popular__price--old">30 000 руб.</div>
+                </div>
+              </div>
+              <div class="popular__bottom"> <a class="popular__button" href="/">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collections">
+      <div class="container"> 
+        <div class="collections__wrapper"> 
+          <h2>Ознакомьтесь с коллекцией 20/21 Тверской Меховой </h2>
+          <div class="collections__list"> 
+            <div class="collections__box"> 
+              <div class="collections__top"> <img class="collections__img" src="./images/collection/1.png"><a class="collections__button" href="/">Перейти в каталог</a></div><a class="collections__name" href="/">Норка</a>
+            </div>
+            <div class="collections__box"> 
+              <div class="collections__top"> <img class="collections__img" src="./images/collection/2.png"><a class="collections__button" href="/">Перейти в каталог</a></div><a class="collections__name" href="/">Каракуль</a>
+            </div>
+            <div class="collections__box"> 
+              <div class="collections__top"> <img class="collections__img" src="./images/collection/3.png"><a class="collections__button" href="/">Перейти в каталог</a></div><a class="collections__name" href="/">Мутон</a>
+            </div>
+            <div class="collections__box"> 
+              <div class="collections__top"> <img class="collections__img" src="./images/collection/4.png"><a class="collections__button" href="/">Перейти в каталог</a></div><a class="collections__name" href="/">Нутрия</a>
+            </div>
+            <div class="collections__box"> 
+              <div class="collections__top"> <img class="collections__img" src="./images/collection/5.png"><a class="collections__button" href="/">Перейти в каталог</a></div><a class="collections__name" href="/">Пушистые меха</a>
+            </div>
+            <div class="collections__box collections__box--menu">
+              <div class="collections__menu"> 
+                <div class="collections__item"><a class="collections__link" href="/">Пальто и пуховики</a></div>
+                <div class="collections__item"><a class="collections__link" href="/">Шапки и аксессуары</a></div>
+                <div class="collections__item"><a class="collections__link" href="/">Для мужчин</a></div>
+                <div class="collections__item"><a class="collections__link" href="/">Большие размеры</a></div>
+                <div class="collections__item"><a class="collections__link" href="/">Распродажа</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plus"> 
+      <div class="container"> 
+        <div class="plus__wrapper"> 
+          <h2>5 причин прийти за шубой<br>на Тверскую меховую</h2>
+          <div class="plus__block">
+            <div class="plus__box"> <img class="plus__icon" src="./images/plus/1.svg">
+              <div class="plus__name">Все виды меха в наличии</div>
+              <div class="plus__desc">Богатый выбор шуб из различных мехов: норка, каракуль, мутон, овчина премиум, нутрия, стриженая нутрия, лисица. Это модные куртки, манто, элегантные длинные пальто. Размеры — от 42 до 60. </div>
+            </div>
+            <div class="plus__list">
+              <div class="plus__box"> <img class="plus__icon" src="./images/plus/2.svg">
+                <div class="plus__name">Производство полного цикла</div>
+                <div class="plus__desc">Мы сами выращиваем пушнину, разрабатываем и отшиваем модели шуб.</div>
+              </div>
+              <div class="plus__box"> <img class="plus__icon" src="./images/plus/3.svg">
+                <div class="plus__name">Высокое качество. ГОСТы</div>
+                <div class="plus__desc">Шубы чипированы и проходят тройной контроль качества. Гарантия до 2х лет.</div>
+              </div>
+              <div class="plus__box"> <img class="plus__icon" src="./images/plus/4.svg">
+                <div class="plus__name">Цены производителя</div>
+                <div class="plus__desc">Покупайте натуральные шубы по выгодным ценам — от 15 тыс. руб.</div>
+              </div>
+              <div class="plus__box"> <img class="plus__icon" src="./images/plus/5.svg">
+                <div class="plus__name">Рассрочка без переплаты</div>
+                <div class="plus__desc">Купите шубу сейчас в рассрочку <b>0 - 0 - 24</b></div>
+              </div>
+            </div>
+          </div>
+          <p><b>Тверская меховая компания «За шубой!»</b> — это крупнейший российский производитель и большая выставка-продажа шуб из натурального меха.</p>
+          <div class="plus__botside"> 
+            <div class="plus__leftside"> <a class="plus__video" data-fancybox href="https://www.youtube.com/watch?v=U1k3t16_GII"><img src="./images/видео.png">
+                <div class="plus__play"></div></a></div>
+            <div class="plus__rightside"> 
+              <h3>Работаем с 2001 года. Нас знают. Нам доверяют.</h3>
+              <div class="plus__roster">
+                <div class="plus__item"> 
+                  <div class="plus__numbers">19 лет</div>
+                  <div class="plus__text">на меховом рынке</div>
+                </div>
+                <div class="plus__item"> 
+                  <div class="plus__numbers">200 000+</div>
+                  <div class="plus__text">довольных покупателей</div>
+                </div>
+                <div class="plus__item"> 
+                  <div class="plus__numbers">450 городов</div>
+                  <div class="plus__text">посетили наши ярмарки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banks"> 
+      <div class="container"> 
+        <div class="banks__wrapper"> 
+          <h2>Рассрочка без переплаты!<br>Все % мы берем на себя!</h2>
+          <div class="banks__list"> <a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Home.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Тинькофф.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Ренессанс.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Халва.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/МТС.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Восточный.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Credit_Europe_Bank.png"></a></div>
+          <div class="banks__roster owl-carousel"><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Home.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Тинькофф.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Ренессанс.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Халва.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/МТС.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Восточный.svg"></a><a class="banks__box" href="/" target="_blank"><img class="banks__img" src="./images/banks/Credit_Europe_Bank.png"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts"> 
+      <div class="container"> 
+        <div class="contacts__wrapper"> 
+          <div class="contacts__topside">
+            <div class="contacts__leftside"> 
+              <h2>Спешите за новой шубой на Тверскую меховую!</h2>
+              <div class="contacts__list"> 
+                <div class="contacts__contact contacts__contact--address">Гостиница "Октябрьская", 2 этаж (СПб, Лиговский пр-т, 10/118)</div>
+                <div class="contacts__contact contacts__contact--time">1 - 8 апреля 2021 10:00 - 20:00</div>
+              </div>
+            </div>
+            <div class="contacts__rightside"> <img class="contacts__img" src="./images/contacts.png">
+              <div class="contacts__top">
+                <div class="contacts__text">До открытия осталось:</div>
+                <div class="contacts__timer countdown">
+                  <div class="contacts__item"> 
+                    <div class="contacts__number days">05</div>
+                    <div class="contacts__name">дней</div>
+                  </div>
+                  <div class="contacts__item"> 
+                    <div class="contacts__number hours">12</div>
+                    <div class="contacts__name">часов</div>
+                  </div>
+                  <div class="contacts__item"> 
+                    <div class="contacts__number minutes">46</div>
+                    <div class="contacts__name">минут</div>
+                  </div>
+                  <div class="contacts__item"> 
+                    <div class="contacts__number seconds">25</div>
+                    <div class="contacts__name">секунд</div>
+                  </div>
+                </div>
+              </div><a class="contacts__button" data-fancybox data-src="#modalOpen">Напомнить об открытии</a>
+            </div>
+          </div>
+          <div class="contacts__botside">
+            <div class="contacts__left"> <img class="contacts__img" src="./images/contacts.png"></div>
+            <div class="map">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"> 
+      <div class="container"> 
+        <div class="footer__wrapper"> 
+          <div class="footer__left"> <a class="footer__logo" href="/"><img class="footer__img" src="./images/logo-white.svg"></a>
+            <div class="footer__link footer__copyright">© 2001—2021 Тверская меховая ярмарка «За шубой!»</div>
+          </div>
+          <div class="footer__center"> 
+            <div class="footer__top"> <a class="footer__phone" href="tel:88002226392">8 800 222 63 92</a>
+              <div class="footer__socials"> <a class="footer__social" href="/">
+                  <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15zm6.505 16.983c.118.146.399.43.843.854h.01l.01.01.01.01.022.02c.978.91 1.64 1.677 1.988 2.301.02.034.043.078.067.13.024.052.049.144.073.276a.813.813 0 01-.005.354c-.028.103-.114.2-.26.286-.146.087-.35.13-.614.13l-2.665.042c-.166.035-.36.017-.583-.052a2.548 2.548 0 01-.54-.229l-.21-.125a4.869 4.869 0 01-.728-.666 18.433 18.433 0 01-.713-.807c-.197-.24-.41-.44-.635-.604-.226-.163-.421-.216-.588-.16a.839.839 0 00-.083.036 1.333 1.333 0 00-.4.458 2.139 2.139 0 00-.178.54c-.052.24-.075.51-.068.808 0 .103-.012.2-.036.286a.7.7 0 01-.078.192l-.042.052c-.125.132-.309.208-.551.23h-1.197c-.493.027-1-.03-1.52-.172a5.818 5.818 0 01-1.368-.552c-.393-.225-.75-.454-1.072-.687a6.206 6.206 0 01-.734-.598l-.26-.25a6.592 6.592 0 01-.286-.313c-.122-.138-.37-.454-.744-.947a25.888 25.888 0 01-1.104-1.571 32.009 32.009 0 01-1.275-2.196 34.308 34.308 0 01-1.358-2.831.827.827 0 01-.063-.28c0-.077.01-.133.032-.168l.041-.062c.104-.132.302-.198.594-.198l2.851-.02c.084.013.163.036.24.067.076.031.132.06.166.088l.052.032a.689.689 0 01.25.333c.139.347.299.706.479 1.077s.323.654.427.848l.166.302c.201.416.396.777.583 1.083.188.305.355.543.505.713.149.17.293.303.432.4.139.098.257.146.354.146.097 0 .19-.017.28-.052a.184.184 0 00.053-.052c.02-.027.062-.104.125-.23a1.69 1.69 0 00.14-.488c.032-.201.065-.482.1-.843a8.109 8.109 0 000-1.3 4.882 4.882 0 00-.094-.76 2.016 2.016 0 00-.146-.48l-.063-.124c-.173-.236-.468-.385-.884-.448-.09-.013-.073-.097.052-.25.118-.131.25-.235.395-.312.368-.18 1.197-.263 2.488-.25.569.007 1.037.052 1.405.136.139.034.255.081.348.14a.56.56 0 01.214.25c.048.107.085.218.11.333a2.4 2.4 0 01.036.473c0 .201-.004.393-.01.573-.008.18-.016.425-.026.733-.01.31-.016.596-.016.86 0 .076-.004.221-.01.436-.008.215-.01.382-.006.5.003.118.016.258.036.421.021.163.061.299.12.406a.686.686 0 00.234.255l.177.042c.063.014.153-.024.27-.115a3.8 3.8 0 00.396-.359c.146-.148.326-.38.541-.697.215-.315.451-.688.708-1.119a16.96 16.96 0 001.114-2.342.704.704 0 01.104-.182.46.46 0 01.114-.11l.042-.03c.013-.008.03-.016.052-.027a.85.85 0 01.344-.036l2.997-.021c.27-.034.492-.026.666.026.173.052.28.11.323.172l.062.104c.16.444-.36 1.463-1.56 3.06-.168.222-.393.517-.677.884-.542.695-.854 1.149-.936 1.365-.119.284-.07.565.145.842z"></path>
+                  </svg></a><a class="footer__social" href="/">
+                  <svg viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.671 11.935c1.446 0 2.617-1.133 2.617-2.532 0-1.4-1.171-2.533-2.617-2.533-1.445 0-2.617 1.134-2.617 2.533s1.172 2.532 2.617 2.532z"></path>
+                    <path d="M15.5 0C6.94 0 0 6.716 0 15c0 8.284 6.94 15 15.5 15C24.06 30 31 23.284 31 15c0-8.284-6.94-15-15.5-15zm.171 4.254c2.938 0 5.32 2.305 5.32 5.149 0 2.843-2.382 5.148-5.32 5.148s-5.32-2.305-5.32-5.148c0-2.844 2.382-5.149 5.32-5.149zm4.73 13.265c-1.132.703-2.682.969-3.695 1.07l.848.82 3.135 3.033a1.154 1.154 0 010 1.67l-.144.139a1.249 1.249 0 01-1.725 0l-3.135-3.034-3.135 3.034a1.25 1.25 0 01-1.726 0l-.143-.14a1.154 1.154 0 010-1.669l3.135-3.034.844-.817c-1.011-.099-2.578-.364-3.719-1.072-1.335-.83-1.927-1.322-1.403-2.34.3-.584 1.132-1.07 2.238-.226 1.494 1.139 3.895 1.139 3.895 1.139s2.4 0 3.895-1.14c1.105-.843 1.937-.357 2.238.227.523 1.019-.068 1.51-1.404 2.34z"></path>
+                  </svg></a><a class="footer__social" href="/">
+                  <svg viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 0C6.94 0 0 6.716 0 15c0 8.284 6.94 15 15.5 15C24.06 30 31 23.284 31 15c0-8.284-6.94-15-15.5-15zm4.554 8.598h-2.215c-.466-.03-.947.315-1.032.766-.01.78-.005 1.561-.005 2.342 1.082.005 2.165 0 3.247.005a42.033 42.033 0 01-.395 3.37c-.958.01-1.915 0-2.872.005-.01 3.332.005 6.658-.005 9.99-1.423.005-2.841-.005-4.264.005-.025-3.331 0-6.663-.015-9.995-.692-.005-1.388.005-2.08-.005.005-1.12 0-2.24 0-3.355.692-.01 1.388 0 2.08-.005.02-1.086-.02-2.177.02-3.264.075-.868.41-1.736 1.077-2.332.807-.742 1.95-.994 3.032-1.024 1.142-.01 2.285-.004 3.427-.004a416.95 416.95 0 010 3.5z"></path>
+                  </svg></a><a class="footer__social" href="/">
+                  <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.909 7.443h-7.892a3.586 3.586 0 00-3.581 3.582v7.964a3.586 3.586 0 003.581 3.581h7.892a3.586 3.586 0 003.581-3.581v-7.964a3.586 3.586 0 00-3.581-3.582zm-3.931 12.332c-2.677 0-4.855-2.154-4.855-4.802 0-2.649 2.178-4.803 4.855-4.803 2.676 0 4.854 2.154 4.854 4.803 0 2.648-2.177 4.802-4.854 4.802zm4.94-8.66a1.142 1.142 0 110-2.284 1.142 1.142 0 010 2.285z"></path>
+                    <path d="M15 0C6.716 0 0 6.716 0 15c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15zm9.262 18.989a5.36 5.36 0 01-5.354 5.353h-7.891a5.36 5.36 0 01-5.353-5.353v-7.964a5.36 5.36 0 015.353-5.353h7.892a5.36 5.36 0 015.353 5.353v7.964z"></path>
+                    <path d="M14.978 11.938c-1.702 0-3.086 1.361-3.086 3.034 0 1.674 1.384 3.035 3.086 3.035s3.086-1.361 3.086-3.035c0-1.673-1.384-3.034-3.086-3.034z"></path>
+                  </svg></a></div>
+            </div><a class="footer__link footer__politics" href="/">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__right">
+            <div class="footer__text">Исключительные права на материалы, размещённые на сайте ярмарка.зашубой.рф, в соответствии с законодательством Российской Федерации об охране результатов интеллектуальной деятельности принадлежат ООО «АЛЬБУС», и не подлежат использованию другими лицами в какой бы то ни было форме без письменного разрешения правообладателя</div><a class="footer__link footer__dev" href="/">Разработано в «brainmarket»</a>
+            <div class="footer__all"> 
+              <div class="footer__link footer__copyright">© 2001—2021 Тверская меховая ярмарка «За шубой!»</div><a class="footer__link footer__politics" href="/">Политика конфиденциальности</a><a class="footer__link footer__dev" href="/">Разработано в «brainmarket»</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="./jquery.fancybox.min.js"></script>
+  <script src="./jquery.downCount.js"></script>
+  <script src="./jquery-ui.min.js"></script>
+  <script src="./jquery-ui-slider-pips.js"></script>
+  <script src="./jquery.nice-select.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
