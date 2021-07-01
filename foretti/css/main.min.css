@@ -1693,3 +1693,144 @@ button {
     @media (max-width: 767px) {
       .footer__link {
         font-size: 14px; } }
+
+.topside {
+  padding: 80px 0px;
+  padding-top: 90px; }
+  @media (max-width: 767px) {
+    .topside {
+      padding: 30px 0px;
+      padding-top: 40px; } }
+  .topside__wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .topside__title {
+    font-family: 'Droid Serif';
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #3E3E3E; }
+    @media (max-width: 767px) {
+      .topside__title {
+        font-size: 24px; } }
+
+.bread {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px; }
+  .bread__box {
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #3E3E3E; }
+    .bread__box span {
+      font-weight: normal;
+      color: #3E3E3E;
+      opacity: .6; }
+    @media (max-width: 767px) {
+      .bread__box {
+        font-size: 12px; } }
+  .bread__link {
+    font-weight: normal;
+    color: #3E3E3E;
+    opacity: .6; }
+
+.catalog--main {
+  padding-bottom: 80px; }
+  .catalog--main__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .catalog--main__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F6F3F2;
+    width: calc(25% - 6.66666px);
+    padding: 70px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: .3s;
+    cursor: pointer; }
+    .catalog--main__box:hover {
+      background-color: #DBC8B9; }
+    .catalog--main__box:nth-child(-n+3) {
+      margin-top: 0px; }
+    .catalog--main__box:nth-child(3n+3) {
+      margin-right: 0px; }
+    @media (max-width: 1279px) {
+      .catalog--main__box {
+        width: calc(33.33333% - 6.66666px); } }
+    @media (max-width: 1023px) {
+      .catalog--main__box {
+        padding: 40px 20px; } }
+    @media (max-width: 767px) {
+      .catalog--main__box {
+        width: 100%;
+        margin-right: 0px; }
+        .catalog--main__box:nth-child(-n+3) {
+          margin-top: 10px; }
+        .catalog--main__box:first-child {
+          margin-top: 0px; } }
+    .catalog--main__box--reverse {
+      flex-direction: row-reverse; }
+      .catalog--main__box--reverse .catalog--main__top {
+        margin: 0px;
+        max-width: 300px;
+        max-height: 300px; }
+        @media (max-width: 1023px) {
+          .catalog--main__box--reverse .catalog--main__top {
+            max-height: 180px;
+            max-width: 180px; } }
+        @media (max-width: 767px) {
+          .catalog--main__box--reverse .catalog--main__top {
+            max-height: 220px;
+            max-width: 220px; } }
+      .catalog--main__box--reverse .catalog--main__name {
+        margin-right: 100px; }
+      @media (max-width: 1279px) {
+        .catalog--main__box--reverse {
+          flex-direction: column; }
+          .catalog--main__box--reverse .catalog--main__top {
+            margin-bottom: 40px; }
+          .catalog--main__box--reverse .catalog--main__name {
+            margin-right: 0px; } }
+    .catalog--main__box--long {
+      width: calc(50% - 6.66666px); }
+      @media (max-width: 1279px) {
+        .catalog--main__box--long {
+          width: calc(33.33333% - 6.66666px); } }
+      @media (max-width: 767px) {
+        .catalog--main__box--long {
+          width: 100%; } }
+  .catalog--main__top {
+    max-height: 240px;
+    min-height: 240px;
+    max-width: 360px;
+    margin-bottom: 40px; }
+    @media (max-width: 1023px) {
+      .catalog--main__top {
+        max-height: 180px;
+        min-height: 180px;
+        max-width: 180px; } }
+    @media (max-width: 767px) {
+      .catalog--main__top {
+        max-height: 220px;
+        min-height: unset;
+        max-width: 220px; } }
+  .catalog--main__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(71px 0px 58px rgba(0, 0, 0, 0.15)); }
+  .catalog--main__name {
+    font-weight: normal;
+    font-size: 26px;
+    text-align: center;
+    color: #000000; }
+    @media (max-width: 1379px) {
+      .catalog--main__name {
+        font-size: 18px; } }
