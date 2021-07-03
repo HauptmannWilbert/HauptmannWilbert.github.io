@@ -62,3 +62,33 @@ $('#big').slick({
     ]
   });
   
+
+
+  $('.diploms__list').owlCarousel({
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    margin:30,
+    nav: true,
+    navContainer: '.diploms__nav',
+    navText: ['<svg viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 18.731l-9-9 9-9" stroke="#3E3E3E" stroke-width="2"/></svg>','<svg viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 18.731l9-9-9-9" stroke="#3E3E3E" stroke-width="2"/></svg>'],
+    dots:false,
+    loop:true,
+    autoWidth: false,
+    autoplay:false,
+    autoplayTimeout:5000, 
+    responsive:{ 
+        0:{
+            items:1
+        },
+        767:{
+            items:2
+        },
+        1024:{
+            items:3
+        },
+        1280:{
+            items:3
+        }
+    }
+  });
+  
