@@ -850,6 +850,9 @@ a {
 button {
   outline: none; }
 
+.images {
+  width: 100%; }
+
 .main {
   padding-top: 146px; }
   @media (max-width: 1023px) {
@@ -2286,3 +2289,157 @@ button {
     @media (max-width: 767px) {
       .gallery-two__item {
         margin-top: 10px; } }
+
+.about--detail {
+  max-width: 1170px;
+  margin: 0 auto; }
+  .about--detail__block {
+    display: flex;
+    margin-top: 60px; }
+    .about--detail__block:first-child {
+      margin-top: 0px; }
+    @media (max-width: 767px) {
+      .about--detail__block {
+        flex-direction: column-reverse;
+        margin-top: 30px; } }
+  .about--detail__leftside {
+    width: 330px; }
+    @media (max-width: 1023px) {
+      .about--detail__leftside {
+        width: 220px; } }
+    @media (max-width: 767px) {
+      .about--detail__leftside {
+        width: 100%; } }
+  .about--detail__rightside {
+    width: calc(100% - 330px);
+    padding-left: 80px; }
+    @media (max-width: 1023px) {
+      .about--detail__rightside {
+        width: calc(100% - 220px);
+        padding-left: 40px; } }
+    @media (max-width: 767px) {
+      .about--detail__rightside {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 30px; } }
+  .about--detail__topic {
+    font-family: 'Droid Serif';
+    font-weight: bold;
+    font-size: 26px;
+    color: #3E3E3E;
+    margin-bottom: 30px; }
+    @media (max-width: 1023px) {
+      .about--detail__topic {
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      .about--detail__topic {
+        font-size: 18px;
+        margin-bottom: 20px; } }
+  .about--detail__text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #3E3E3E;
+    margin-top: 25px; }
+    @media (max-width: 1023px) {
+      .about--detail__text {
+        font-size: 16px; } }
+    @media (max-width: 767px) {
+      .about--detail__text {
+        font-size: 14px;
+        margin-top: 15px; } }
+  .about--detail__img {
+    width: 100%; }
+  .about--detail__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px; }
+    .about--detail__item:first-child {
+      margin-top: 60px; }
+      @media (max-width: 767px) {
+        .about--detail__item:first-child {
+          margin-top: 0px; } }
+
+.diploms {
+  margin-top: 80px; }
+  @media (max-width: 767px) {
+    .diploms {
+      margin-top: 40px; } }
+  .diploms__title {
+    font-family: 'Droid Serif';
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: #3E3E3E;
+    margin-bottom: 50px; }
+    @media (max-width: 1023px) {
+      .diploms__title {
+        font-size: 20px;
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .diploms__title {
+        font-size: 18px;
+        margin-bottom: 20px; } }
+  .diploms__block {
+    position: relative; }
+  .diploms__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: 0;
+    z-index: 1; }
+    @media (max-width: 1023px) {
+      .diploms__nav {
+        top: calc(50% - 24px); } }
+    @media (max-width: 767px) {
+      .diploms__nav {
+        top: calc(50% - 14px); } }
+    .diploms__nav .owl-prev, .diploms__nav .owl-next {
+      position: relative;
+      z-index: 10;
+      background: none;
+      outline: none;
+      border: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      transition: .3s;
+      cursor: pointer;
+      border: 1px solid rgba(62, 62, 62, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px; }
+      .diploms__nav .owl-prev:hover, .diploms__nav .owl-next:hover {
+        border-color: #3e3e3e; }
+      @media (max-width: 1023px) {
+        .diploms__nav .owl-prev, .diploms__nav .owl-next {
+          width: 48px;
+          height: 48px; } }
+      @media (max-width: 767px) {
+        .diploms__nav .owl-prev, .diploms__nav .owl-next {
+          width: 28px;
+          height: 28px; } }
+      .diploms__nav .owl-prev svg, .diploms__nav .owl-next svg {
+        width: 20px;
+        height: 20px; }
+        @media (max-width: 1023px) {
+          .diploms__nav .owl-prev svg, .diploms__nav .owl-next svg {
+            width: 16px;
+            height: 16px; } }
+        @media (max-width: 767px) {
+          .diploms__nav .owl-prev svg, .diploms__nav .owl-next svg {
+            width: 10px;
+            height: 10px; } }
+  .diploms__list {
+    width: calc(100% - 230px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 5; }
+    @media (max-width: 767px) {
+      .diploms__list {
+        width: calc(100% - 86px); } }
