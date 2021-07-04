@@ -1584,6 +1584,8 @@ button {
     line-height: 145%;
     color: #fff;
     text-align: left; }
+    .news__name:hover {
+      opacity: .6; }
   .news__button {
     width: 34px;
     height: 34px;
@@ -1596,6 +1598,8 @@ button {
     transition: .3s;
     position: relative;
     z-index: 10; }
+    .news__button:hover {
+      opacity: .6; }
 
 .news--page {
   text-align: center;
@@ -2182,6 +2186,8 @@ button {
     background-repeat: no-repeat;
     background-image: url(../images/arrow-back-black.svg);
     display: inline-block; }
+    .catalog--subdetail__back:hover {
+      opacity: .6; }
   .catalog--subdetail__preview {
     margin-top: 20px; }
   .catalog--subdetail__item {
@@ -2220,8 +2226,7 @@ button {
   .catalog--subdetail__img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(71px 0px 58px rgba(0, 0, 0, 0.15)); }
+    object-fit: contain; }
   .catalog--subdetail__name {
     font-family: 'Droid Serif';
     font-weight: normal;
