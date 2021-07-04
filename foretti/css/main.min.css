@@ -1739,6 +1739,29 @@ button {
       line-height: 18px;
       margin-top: 15px; } }
 
+.articles {
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .articles {
+      margin-bottom: 40px; } }
+  .articles__title {
+    font-family: 'Droid Serif';
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #3E3E3E;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .articles__title {
+        font-size: 20px;
+        margin-bottom: 25px; } }
+  .articles__list {
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 1279px) {
+      .articles__list .news__box:last-child {
+        width: 100%; } }
+
 .footer {
   background: #F6F6F6;
   padding: 70px 0px;
