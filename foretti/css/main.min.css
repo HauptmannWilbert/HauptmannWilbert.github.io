@@ -1628,6 +1628,117 @@ button {
         font-size: 14px;
         margin-top: 40px; } }
 
+.news--detail__banner {
+  padding: 80px 15px;
+  padding-bottom: 450px;
+  background-color: #F7DFBD;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (max-width: 767px) {
+    .news--detail__banner {
+      padding: 30px 15px;
+      padding-bottom: 180px; } }
+
+.news--detail__wrapper {
+  max-width: 780px;
+  margin: 0 auto; }
+
+.news--detail__title {
+  font-family: 'Droid Serif';
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 135%;
+  text-align: center;
+  color: #3E3E3E;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .news--detail__title {
+      font-size: 20px;
+      margin-bottom: 20px; } }
+
+.news--detail__top {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.news--detail__category {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background: #845747;
+  border-radius: 7px;
+  padding: 5px 20px;
+  padding-top: 2px;
+  margin-right: 16px; }
+
+.news--detail__time {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #3E3E3E; }
+
+.news--detail__topside {
+  padding: 60px 30px;
+  max-width: 990px;
+  margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .news--detail__topside {
+      padding: 60px 20px; } }
+  @media (max-width: 767px) {
+    .news--detail__topside {
+      padding: 30px 15px; } }
+
+.news--detail__botside {
+  padding: 60px 30px;
+  max-width: 990px;
+  margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .news--detail__botside {
+      padding: 60px 20px; } }
+  @media (max-width: 767px) {
+    .news--detail__botside {
+      padding: 30px 15px; } }
+
+.news--detail__topic--one {
+  font-family: 'Droid Serif';
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 135%;
+  text-align: center;
+  color: #845747;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .news--detail__topic--one {
+      font-size: 18px;
+      margin-bottom: 25px; } }
+
+.news--detail__topic {
+  font-family: 'Droid Serif';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 135%;
+  text-align: center;
+  color: #3E3E3E;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .news--detail__topic {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+
+.news--detail__text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #3E3E3E;
+  margin-top: 25px; }
+  @media (max-width: 767px) {
+    .news--detail__text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 15px; } }
+
 .footer {
   background: #F6F6F6;
   padding: 70px 0px;
