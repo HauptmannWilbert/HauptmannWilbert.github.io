@@ -3021,3 +3021,85 @@ button {
 #map {
   width: 100%;
   height: 100%; }
+
+.review {
+  text-align: center; }
+  .review__box {
+    background: #F6F3F2;
+    padding: 60px 120px;
+    margin-top: 30px;
+    text-align: left; }
+    .review__box:first-child {
+      margin-top: 0px; }
+    @media (max-width: 1279px) {
+      .review__box {
+        padding: 40px 40px; } }
+    @media (max-width: 767px) {
+      .review__box {
+        padding: 20px 15px; } }
+  .review__topside--photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 767px) {
+      .review__topside--photo {
+        flex-direction: column; } }
+    .review__topside--photo .review__text {
+      width: calc(100% - 330px); }
+      @media (max-width: 1023px) {
+        .review__topside--photo .review__text {
+          width: calc(100% - 200px); } }
+      @media (max-width: 767px) {
+        .review__topside--photo .review__text {
+          width: 100%; } }
+  .review__text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.45;
+    color: #3E3E3E; }
+    @media (max-width: 1023px) {
+      .review__text {
+        font-size: 16px; } }
+  .review__img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px; }
+    @media (max-width: 1023px) {
+      .review__img {
+        max-width: 180px;
+        max-height: 180px; } }
+    @media (max-width: 767px) {
+      .review__img {
+        margin-bottom: 20px; } }
+  .review__botside {
+    margin-top: 50px;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .review__botside {
+        margin-top: 30px; } }
+  .review__photo {
+    max-height: 66px;
+    max-width: 66px;
+    border-radius: 50%;
+    width: 100%;
+    margin-right: 15px; }
+    @media (max-width: 1023px) {
+      .review__photo {
+        max-height: 48px;
+        max-width: 48px; } }
+  .review__name {
+    font-family: 'Droid Serif';
+    font-weight: bold;
+    font-size: 20px;
+    color: #3E3E3E; }
+    @media (max-width: 1023px) {
+      .review__name {
+        font-size: 16px; } }
+  .review__desc {
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(62, 62, 62, 0.5); }
+    @media (max-width: 1023px) {
+      .review__desc {
+        font-size: 16px; } }
