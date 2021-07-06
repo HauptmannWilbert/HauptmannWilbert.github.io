@@ -92,3 +92,60 @@ $('#big').slick({
     }
   });
   
+
+
+
+  ymaps.ready(init);
+
+  function init() {
+  
+      var myMap = new ymaps.Map('map', {
+          center: [48.704272, 65.602030],
+          zoom: 2,
+          type: 'yandex#map',
+          controls: ['zoomControl']
+      });
+  
+    ymaps.borders.load('001').then(function (geojson) {
+      var objectManager = new ymaps.ObjectManager();
+      // Чтобы добавить объекты в ObjectManager, необходимо
+      // задать для них идентификаторы.
+    
+      var features = geojson.features.map(function (feature) {
+        feature.id = feature.properties.iso3166;
+        if(feature.properties.iso3166 == "RU"){
+          feature.options = {
+            strokeColor: '#ffffff',
+            fillColor: '#30cb05',
+            fillOpacity: 0.8
+          };
+        } else if(feature.properties.iso3166 == "IN"){
+          feature.options = {
+            strokeColor: '#ffffff',
+            fillColor: '#fbc520',
+            fillOpacity: 0.8
+          };
+        } else if(feature.properties.iso3166 == "CN"){
+          feature.options = {
+            strokeColor: '#ffffff',
+            fillColor: '#16acdb',
+            fillOpacity: 0.8
+          };
+        } else {
+          feature.options = {
+            strokeColor: '#ffffff',
+            fillColor: '#16acdb',
+            fillOpacity: 0
+          };
+        }
+        
+        return feature;
+      }); 
+        
+      objectManager.add(features);
+      myMap.geoObjects.add(objectManager);
+      }, function (e) {
+       console.log(e);
+      });
+    
+    }
