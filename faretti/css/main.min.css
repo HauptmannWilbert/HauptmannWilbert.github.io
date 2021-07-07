@@ -3492,6 +3492,11 @@ button {
       height: 20px;
       margin-right: 10px; } }
 
+.fos__form {
+  display: none; }
+  .fos__form--active {
+    display: block; }
+
 .callbasket {
   position: fixed;
   right: 30px;

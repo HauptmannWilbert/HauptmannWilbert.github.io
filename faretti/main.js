@@ -149,3 +149,18 @@ $('#big').slick({
       });
     
     }
+
+
+$(function() {
+  $(".fos__topside").on("click", ".fos__tab:not(.fos__tab--active)", function() {
+    $(this)
+      .addClass("fos__tab--active")
+      .siblings()
+      .removeClass("fos__tab--active")
+      .closest(".fos__tabs")
+      .find(".fos__form")
+      .removeClass("fos__form--active")
+      .eq($(this).index())
+      .addClass("fos__form--active");
+  });
+});
