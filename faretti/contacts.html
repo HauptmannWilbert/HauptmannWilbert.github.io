@@ -28,8 +28,43 @@
     </div>
   </div>
   <div class="page">
-    <div class="callbasket"></div>
-    <div class="callfos"></div>
+    <div class="modal" id="modalBasket"> 
+      <div class="modal__wrapper"> 
+        <div class="modal__close" data-fancybox-close><span> </span><span> </span><span></span></div>
+        <div class="fos__tabs"> 
+          <div class="fos__topside"> <a class="fos__tab fos__tab--active">Задать вопрос</a><a class="fos__tab">Написать отзыв</a><a class="fos__tab">Запросить контакты</a></div>
+          <div class="fos__list"> 
+            <form class="fos__form fos__form--active">
+              <div class="fos__box">
+                <div class="fos__topic">Выберите тему обращения</div>
+                <select class="fos__select">
+                  <option class="fos__option">Коммерческое предложение</option>
+                  <option class="fos__option">Коммерческое предложение 2</option>
+                </select>
+              </div>
+            </form>
+            <form class="fos__form"></form>
+            <form class="fos__form"></form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modalMarket">
+      <div class="modal__wrapper"> 
+        <div class="modal__close" data-fancybox-close><span> </span><span> </span><span></span></div>
+        <div class="modal__block">
+          <div class="modal__topic">Доступные маркетплейсы</div>
+          <div class="modal__list"> <a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/1.png">
+              <div class="modal__name">Яндекс Лавка</div></a><a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/2.png">
+              <div class="modal__name">Яндекс маркет</div></a><a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/3.png">
+              <div class="modal__name">Озон</div></a><a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/4.png">
+              <div class="modal__name">Впрок - Перекресток</div></a><a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/5.png">
+              <div class="modal__name">Сбермаркет</div></a><a class="modal__box" href="/" target="_blank"> <img class="modal__img" src="./images/icons/6.png">
+              <div class="modal__name">Selvis</div></a></div>
+        </div>
+      </div>
+    </div><a class="callbasket" data-fancybox data-src="#modalBasket"></a><a class="callfos" data-fancybox data-src="#modalMarket"></a>
+
     <div class="top">
       <div class="container"> 
         <div class="top__wrapper"> 
