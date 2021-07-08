@@ -3498,6 +3498,7 @@ button {
     display: block; }
 
 .callbasket {
+  z-index: 50;
   position: fixed;
   right: 30px;
   bottom: 40%;
@@ -3520,6 +3521,7 @@ button {
       bottom: 20%; } }
 
 .callfos {
+  z-index: 50;
   position: fixed;
   right: 30px;
   bottom: calc(40% - 88px);
