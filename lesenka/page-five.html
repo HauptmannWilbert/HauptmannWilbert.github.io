@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="fonts/manrope/manrope.css">
+    <link rel="stylesheet" href="fonts/inter/inter.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Lesenka</title>
+</head>
+<body>
+
+
+
+  <div class="page" id="page">
+    <div class="manual">
+      <div class="manual__bg">
+        <div class="container">
+          <div class="manual__wrapper">
+            <div class="manual__leftside">
+              <div class="manual__list">
+                <div class="manual__link manual__link--offer">Акции</div>
+                <div class="manual__link manual__link--active">Виды лестниц</div>
+                <div class="manual__link">Расходные материалы</div>
+                <div class="manual__link">Ручной инструмент</div>
+                <div class="manual__link">Все для сада и огорода</div>
+                <div class="manual__link">Комплектующие для окон</div>
+                <div class="manual__link">Лестницы и стремянки</div>
+                <div class="manual__link">Средства защиты</div>
+                <div class="manual__link">Хозяйственные товары</div>
+                <div class="manual__link">Строительная химия</div>
+                <div class="manual__link">Электроинструмент</div>
+                <div class="manual__link">Стенды</div>
+              </div>
+            </div>
+            <div class="manual__rightside">
+              <div class="manual__item">
+                <div class="manual__title">Акции</div>
+              </div>
+              <div class="manual__item manual__item--active">
+                <div class="manual__title">Виды лестниц</div>
+                <div class="manual__roster">
+                  <div class="manual__box"><a class="manual__name" href="/">Готовые лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Эконом лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Деревянные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Межэтажные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Металлические лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Модульные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Лестницы без перил</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Лестницы на второй этаж</a></div>
+                </div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Расходные материалы</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Ручной инструмент</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Все для сада и огорода</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Комплектующие для окон</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Лестницы и стремянки</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Средства защиты</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Хозяйственные товары</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Строительная химия</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Электроинструмент</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Стенды</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cities" id="cities">
+      <div class="cities__topside">
+        <div class="cities__top">
+          <div class="cities__title">Выбор города</div>
+          <div class="cities__close" data-fancybox-close> <span> </span><span> </span><span> </span></div>
+        </div>
+      </div>
+      <div class="cities__botside">
+        <form class="cities__form">
+          <div class="cities__name">Название города</div>
+          <input class="cities__input" type="text" placeholder="Введите название">
+          <input class="cities__find" type="submit" value="">
+        </form>
+        <div class="cities__list"> 
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Москва</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Санкт-Петербург</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Екатеринбург</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Казань</a></div>
+          </div>
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Краснодар</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Нижний Новгород</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Ростов-на-Дону</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Орел</a></div>
+          </div>
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Уфа</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Пермь</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Хабаровск</a></div>
+          </div>
+        </div>
+        <div class="cities__buttons"> <a class="cities__button" href="/">Продолжить с выбранным</a><a class="cities__button" href="/">Выбрать автоматически</a></div>
+      </div>
+    </div>
+    <div class="top"> 
+      <div class="container"> 
+        <div class="top__wrapper"> 
+          <div class="top__list"> 
+            <div class="top__box"> <a class="top__link" href="/">Как заказать</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Адреса складов</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Частые вопросы</a></div>
+            <div class="top__box"> <a class="top__link" href="/">О компании</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Сертификаты</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Помощь</a></div>
+          </div>
+          <div class="top__rightside"> 
+            <div class="top__city">Тверь</div>
+            <div class="city"> 
+              <div class="city__question">Ваш город - <b>Тверь?</b></div>
+              <div class="city__answers"> 
+                <div class="city__answer">Да</div><a class="city__answer" data-fancybox data-animation-duration data-src="#cities">Нет</a>
+              </div>
+            </div>
+            <div class="top__right"><a class="top__login" href="/">Вход</a><a class="top__registration" href="/"><span>Регистрация</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header"> 
+      <div class="container"> 
+        <div class="header__wrapper"> 
+          <div class="header__hamburger"><span> </span><span> </span><span></span></div><a class="header__logo" href="/"><img class="header__img" src="./images/logo.svg"></a>
+          <div class="header__center"> 
+            <div class="header__catalog"> 
+              <div class="header__catalog__left"> <span> </span><span></span><span></span></div>
+              <div class="header__catalog__name">Каталог</div>
+            </div>
+            <div class="header__find">Найти</div>
+            <form class="header__form">
+              <input class="header__input" type="text" placeholder="Лестница винтовая">
+              <input class="header__search" type="submit" value="Найти">
+            </form>
+            <div class="header__contacts"> <a class="header__phone" href="tel:88003334925">8 (800) 333-49-25</a>
+              <div class="header__name">Звонок бесплатный</div>
+            </div>
+          </div>
+          <div class="header__rightside"> 
+            <div class="header__favorite"><span>1</span>
+              <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.501 5.501 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78v0Z" stroke="#232630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="header__basket"><span>2</span>
+              <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM20 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div class="header__basket__name">Корзина</div>
+            </div>
+            <div class="header__finding"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu"> 
+      <div class="container"> 
+        <div class="menu__wrapper"> 
+          <div class="menu__list"> 
+            <div class="menu__item"> <a class="menu__link menu__link--offer" href="/">Акции</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--credit" href="/">Рассрочка</a></div>
+            <div class="menu__item menu__item--delivery"><a class="menu__link menu__link--delivery" href="/">Доставка и оплата</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--opt" href="/">Оптовикам</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--contacts" href="/">Контакты</a></div>
+          </div>
+          <div class="menu__rightside"> 
+            <div class="menu__item"> <a class="menu__link menu__link--review" href="/">Обзоры</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--news" href="/">Новости</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bread">
+      <div class="container"> 
+        <div class="bread__wrapper"> 
+          <div class="bread__list"> 
+            <div class="bread__box"> <a class="bread__link" href="/">Каталог</a></div>
+            <div class="bread__box">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m4.5 9 3-3-3-3" stroke="#B1B3B9" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="bread__box"> <a class="bread__link" href="/">Металлические лестницы</a></div>
+            <div class="bread__box">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m4.5 9 3-3-3-3" stroke="#B1B3B9" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="bread__box">Модульная малогабаритная лестница Линия (прямой марш)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include sections/slider.pug-->
+    <!--include sections/hits.pug-->
+    <!--include sections/category.pug-->
+    <!--include sections/catalog-page.pug-->
+    <div class="content"> 
+      <div class="container"> 
+        <div class="content__wrapper"> 
+          <div class="card"> 
+            <div class="card__title">Модульная малогабаритная лестница Линия (прямой марш)</div>
+            <div class="card__line">
+              <div class="card__row"> 
+                <div class="card__stars my-rating" data-rating="4.5"></div>
+                <div class="card__review">3 отзыва</div>
+              </div>
+              <div class="card__series">серия: квадро</div>
+            </div>
+            <div class="card__main">
+              <div class="card__topside">
+                <div class="card__block"> 
+                  <div class="card__leftside"> 
+                    <div class="card__left"> 
+                      <div class="card__nav"> </div>
+                      <div class="card__window"> 
+                        <div class="card__carousel" id="thumbs">
+                          <div class="card__box"> <img class="card__img" src="./images/products/1.png"></div>
+                          <div class="card__box"> <img class="card__img" src="./images/products/1.png"></div>
+                          <div class="card__box"> <img class="card__img" src="./images/products/1.png"></div>
+                          <div class="card__box"> <img class="card__img" src="./images/products/1.png"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__right">
+                      <div class="card__list" id="big"><a class="card__item" data-fancybox data-src="./images/products/1.png"><img class="card__images" src="./images/products/1.png"></a><a class="card__item" data-fancybox data-src="./images/products/1.png"><img class="card__images" src="./images/products/1.png"></a><a class="card__item" data-fancybox data-src="./images/products/1.png"><img class="card__images" src="./images/products/1.png"></a><a class="card__item" data-fancybox data-src="./images/products/1.png"><img class="card__images" src="./images/products/1.png"></a></div>
+                    </div>
+                  </div>
+                  <div class="card__rightside"> 
+                    <div class="card__case">
+                      <div class="card__name card__name--icon">Высота шага мм:</div>
+                      <div class="card__params"> 
+                        <div class="card__param card__param--active">225</div>
+                      </div>
+                    </div>
+                    <div class="card__case">
+                      <div class="card__name card__name--icon">Высота лестницы мм:</div>
+                      <div class="card__params"> 
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                        <div class="card__param">1800-2025</div>
+                      </div>
+                    </div>
+                    <div class="card__case">
+                      <div class="card__name">Материал:</div>
+                      <div class="card__materials"> 
+                        <div class="card__material card__material--active"><img class="card__icon" src="./images/materials/сосна.png"></div>
+                        <div class="card__material"> <img class="card__icon" src="./images/materials/сосна.png"></div>
+                        <div class="card__material"> <img class="card__icon" src="./images/materials/сосна.png"></div>
+                      </div>
+                    </div>
+                    <div class="card__case">
+                      <div class="card__name">Цвет каркаса:</div>
+                      <div class="card__materials"> 
+                        <div class="card__material card__color card__material--active" style="background-color:#c4c4c4;"></div>
+                        <div class="card__material card__color" style="background-color:#000;"></div>
+                        <div class="card__material card__color card__color--white" style="background-color:#fff"></div>
+                      </div>
+                    </div>
+                    <div class="card__case">
+                      <div class="card__name card__name--icon">Стойка перил:</div>
+                      <div class="card__params"> 
+                        <div class="card__param">Крашеная</div>
+                        <div class="card__param">Нержавеющая сталь</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price__rightside price__rightside--low">
+                  <div class="price__name">Цена</div>
+                  <div class="price__value">44 999 <i>₽</i></div>
+                  <div class="price__credit"> 
+                    <div class="price__credit__value">59 464 <i>₽</i></div>
+                    <div class="price__credit__time">х 6 месяцев</div>
+                  </div>
+                  <div class="price__buttons"> <a class="price__button" href="/">В Корзину</a><a class="price__button price__button--dark" href="/">В Рассрочку</a></div><a class="price__offer" href="/">Предложить цену</a>
+                </div>
+                <div class="tabs">
+                  <div class="tabs__top">
+                    <div class="tabs__tab tabs__tab--active">Описание</div>
+                    <div class="tabs__tab">Характеристики</div>
+                    <div class="tabs__tab">Сертификаты</div>
+                    <div class="tabs__tab">Видео по сборке</div>
+                    <div class="tabs__tab">Сопутствующие товары</div>
+                    <div class="tabs__tab">Отзывы</div>
+                  </div>
+                  <div class="tabs__box tabs__box--active">
+                    <div class="tabs__case">
+                      <div class="tabs__name">Описание товара</div>
+                      <p>Малогабаритная модульная лестница состоит из множества идентичных деталей, называемых модулями. Она представляет собой удобную, практичную, современную конструкцию, которая удачно дополнит любой интерьер. Дополнительное преимущество модульных лестниц – возможность установки в практически любом помещении. </p>
+                      <p>Отличительная особенность – оригинальный дизайн. Компания "Лесенка" имеет патент на изготовление лестниц с квадратным профилем. Только у нас Вы сможете приобрести лестницу данной конструкции.</p>
+                    </div>
+                    <div class="tabs__case">
+                      <div class="tabs__name">Характеристики</div>
+                      <div class="tabs__params"> 
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Высота лестницы</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">1800 до 2025 мм</div>
+                        </div>
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Высота шага</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">225 мм</div>
+                        </div>
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Ширина ступени</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">700 мм</div>
+                        </div>
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Материал</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">Сосна, лиственица, бук</div>
+                        </div>
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Стойка перил</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">Крашеная, нержавеющая сталь</div>
+                        </div>
+                        <div class="tabs__param"> 
+                          <div class="tabs__param__name">Цвет каркаса</div>
+                          <div class="tabs__param__line"> </div>
+                          <div class="tabs__param__value">Серый, чорный. белый</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__case">
+                      <div class="tabs__name">Сертификаты</div>
+                      <div class="tabs__docs"> <a class="tabs__doc" href="/">Сертификат соответствия.pdf</a><a class="tabs__doc" href="/">Патент на изготовление лестниц с квадратным профилем .pdf</a></div>
+                    </div>
+                    <div class="tabs__case">
+                      <div class="tabs__name">Видео по сборке</div>
+                      <div class="tabs__video"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=VPw7rXZzfkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs__box"> </div>
+                  <div class="tabs__box"> </div>
+                  <div class="tabs__box"> </div>
+                  <div class="tabs__box"> </div>
+                  <div class="tabs__box"> </div>
+                </div>
+              </div>
+              <div class="card__sidebar">
+                <div class="price__block">
+                  <div class="price__rightside">
+                    <div class="price__name">Цена</div>
+                    <div class="price__value">44 999 <i>₽</i></div>
+                    <div class="price__credit"> 
+                      <div class="price__credit__value">59 464 <i>₽</i></div>
+                      <div class="price__credit__time">х 6 месяцев</div>
+                    </div>
+                    <div class="price__buttons"> <a class="price__button" href="/">В Корзину</a><a class="price__button price__button--dark" href="/">В Рассрочку</a></div><a class="price__offer" href="/">Предложить цену</a>
+                  </div>
+                  <div class="price__information"> 
+                    <div class="price__topic">Информация о товаре</div>
+                    <div class="price__item price__item--nal">В наличии: 6 штук</div>
+                    <div class="price__item price__item--deliv">Доставка от 1 дня</div>
+                    <div class="price__item price__item--shield">Гарантия 1 год</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="./slick.min.js"></script>
+  <script src="./jquery.fancybox.min.js"></script>
+  <script src="./jquery.star-rating-svg.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

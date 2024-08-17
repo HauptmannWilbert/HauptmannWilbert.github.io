@@ -49,7 +49,6 @@ function init () {
 }
 
 
-
 $('.banks__roster').owlCarousel({
 	animateIn: 'fadeIn',
 	animateOut: 'fadeOut',
@@ -75,3 +74,61 @@ $('.banks__roster').owlCarousel({
 		}
 	}
   });
+
+
+  
+  $(document).ready(function() {
+	$('#fancybox').fancybox({     
+	
+	  autoSize: true,
+	  afterShow: function() {
+  
+  $('#big').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	asNavFor: '#thumbs',
+	vertical: true,
+	verticalSwiping: true,
+	draggable:false,
+	swipeToSlide:false,
+	arrows: false,
+	infinite: true,
+	responsive: [
+	  {
+		breakpoint: 767,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  verticalSwiping: false,
+		  vertical: false
+		}
+	  }
+	]
+  });
+  
+  $('#thumbs').slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	asNavFor: '#big',
+	focusOnSelect: true,
+	vertical: true,
+	verticalSwiping: true,
+	responsive: [
+	  {
+		breakpoint: 767,
+		settings: {
+		  slidesToScroll: 1,
+		  slidesToShow: 3,
+		  arrows:false,
+		  verticalSwiping: false,
+		  vertical: false,
+		}
+	  }
+	]
+  });
+  
+  }
+  });
+  
+  });
+  

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/montserrat/montserrat.css">
+    <link rel="stylesheet" href="fonts/opensans/opensans.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+<body>
+ 
+  <div class="mobile" id="mobile--menu">
+    <form class="top__form mobile__search">
+      <input class="top__input" type="text" placeholder="поиск">
+      <input class="top__send" type="submit" value="">
+    </form>
+    <div class="mobile__list">
+      <div class="mobile__box"><a class="mobile__link" href="/">О компании</a></div>
+      <div class="mobile__box"><a class="mobile__link" href="/">Продукция</a></div>
+      <div class="mobile__box"><a class="mobile__link" href="/">Новости</a></div>
+      <div class="mobile__box"><a class="mobile__link" href="/">Контакты</a></div>
+    </div>
+    <div class="mobile__contacts"><a class="mobile__contact mobile__contact--phone" href="tel:+74956409393">+7 495 640 93 93</a><a class="mobile__contact mobile__contact--email" href="mailto:info@ar-chimia.ru">info@ar-chimia.ru</a></div>
+  </div>
+  <div class="page" id="page">
+    <div class="top"> 
+      <div class="top__container"> 
+        <div class="top__wrapper"> 
+          <form class="top__form">
+            <input class="top__input" type="text" placeholder="поиск">
+            <input class="top__send" type="submit" value="">
+          </form>
+          <div class="top__topside">
+            <div class="top__leftside">
+              <div class="top__hamburger"><span></span><span></span><span></span></div><a class="top__logo" href="/"><img class="top__img" src="./images/logo-top.png"></a><a class="top__tel" href="tel:"></a>
+              <div class="top__list"> 
+                <div class="top__box"> <a class="top__link" href="/">О компании</a></div>
+                <div class="top__box top__box--drop"><a class="top__link" href="/">Продукция</a>
+                  <div class="top__drop"> 
+                    <div class="top__item"> <a class="top__links" href="/">АКТИВНЫЕ ИНГРЕДИЕНТЫ</a></div>
+                    <div class="top__item"> <a class="top__links" href="/">ОТДУШКИ</a></div>
+                    <div class="top__item"> <a class="top__links" href="/">ПИГМЕНТЫ</a></div>
+                    <div class="top__item"> <a class="top__links" href="/">СПЕЦИАЛЬНЫЕ ПРОДУКТЫ</a></div>
+                  </div>
+                </div>
+                <div class="top__box"> <a class="top__link" href="/">Новости</a></div>
+                <div class="top__box"> <a class="top__link" href="/">Контакты</a></div>
+              </div>
+            </div>
+            <div class="top__rightside"> <a class="top__phone" href="tel:">+7 495 640 93 93</a><a class="top__email" href="mailto:">info@ar-chimia.ru</a>
+              <div class="top__socials"> <a class="top__social" href="/"><img src="./images/facebook-top.svg" alt="facebook"></a><a class="top__social" href="/"><img src="./images/instagram-top.svg" alt="instagram"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="substrate" style="background-image:url(./images/topside/bg-1.png);">
+      <div class="container"> 
+        <div class="substrate__wrapper"> 
+          <div class="substrate__title"><b>НАДЕЖНОСТЬ,</b> ПРОВЕРЕННАЯ ВРЕМЕНЕМ</div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="under"> 
+      <div class="container"> 
+        <div class="under__wrapper"> 
+          <div class="under__title">Новости компании</div>
+        </div>
+      </div>
+    </div>
+    <!--include sections/ingredients.pug-->
+    <div class="content">
+      <div class="content__container"> 
+        <div class="content__wrapper">
+          <div class="perfume-detail"><img src="./images/perfume.png">
+            <div class="content__topic">ВЫСОКАЯ ПАРФЮМЕРИЯ</div>
+            <div class="perfume-detail__table">
+              <div class="perfume-detail__top"> 
+                <div class="perfume-detail__name">НАЗВАНИЕ</div>
+                <div class="perfume-detail__name">ЦВЕТ</div>
+                <div class="perfume-detail__name">СОДЕРЖАНИЕ TiO₂</div>
+                <div class="perfume-detail__name">ОСОБЫЕ СВОЙСТВА</div>
+                <div class="perfume-detail__name">ПРОИЗВОДИТЕЛЬ</div>
+              </div>
+              <div class="perfume-detail__bot"> 
+                <div class="perfume-detail__tr">
+                  <div class="perfume-detail__td" data-label="НАЗВАНИЕ">
+                    <div class="perfume-detail__text"><b>EARIS 1510</b></div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ЦВЕТ">
+                    <div class="perfume-detail__text">яркий белый</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="СОДЕРЖАНИЕ TiO₂">
+                    <div class="perfume-detail__text">24%</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ОСОБЫЕ СВОЙСТВА">
+                    <div class="perfume-detail__text">пигмент косметического назначения</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ПРОИЗВОДИТЕЛЬ">
+                    <div class="perfume-detail__text">Wenzhou Youngbio Chemical Co.,Ltd. (Китай)</div>
+                  </div>
+                </div>
+                <div class="perfume-detail__tr">
+                  <div class="perfume-detail__td" data-label="НАЗВАНИЕ">
+                    <div class="perfume-detail__text"><b>EARIS 1510</b></div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ЦВЕТ">
+                    <div class="perfume-detail__text">яркий белый</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="СОДЕРЖАНИЕ TiO₂">
+                    <div class="perfume-detail__text">24%</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ОСОБЫЕ СВОЙСТВА">
+                    <div class="perfume-detail__text">пигмент косметического назначения</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ПРОИЗВОДИТЕЛЬ">
+                    <div class="perfume-detail__text">Wenzhou Youngbio Chemical Co.,Ltd. (Китай)</div>
+                  </div>
+                </div>
+                <div class="perfume-detail__tr">
+                  <div class="perfume-detail__td" data-label="НАЗВАНИЕ">
+                    <div class="perfume-detail__text"><b>EARIS 1510</b></div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ЦВЕТ">
+                    <div class="perfume-detail__text">яркий белый</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="СОДЕРЖАНИЕ TiO₂">
+                    <div class="perfume-detail__text">24%</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ОСОБЫЕ СВОЙСТВА">
+                    <div class="perfume-detail__text">пигмент косметического назначения</div>
+                  </div>
+                  <div class="perfume-detail__td" data-label="ПРОИЗВОДИТЕЛЬ">
+                    <div class="perfume-detail__text">Wenzhou Youngbio Chemical Co.,Ltd. (Китай)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="perfume-detail__topic">и многие другие ароматы</div><a class="perfume-detail__consultation" href="/">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="fos"> 
+      <div class="container"> 
+        <div class="fos__wrapper"> 
+          <div class="fos__leftside"> 
+            <div class="fos__title">НАШИ СПЕЦИАЛИСТЫ ГОТОВЫ ОКАЗАТЬ ВАМ КОНСУЛЬТАЦИОННУЮ ПОДДЕРЖКУ </div>
+            <div class="fos__desc">Заполните форму обратной связи и мы в кратчайшие сроки ответим на Ваш запрос.</div>
+          </div>
+          <div class="fos__rightside">
+            <form class="fos__form">
+              <input class="fos__input" type="text" placeholder="Ваше имя">
+              <input class="fos__input" type="text" placeholder="Компания">
+              <input class="fos__input" type="text" placeholder="E-mail или номер телефона">
+              <textarea class="fos__textarea" placeholder="Какая продукция Вас интересует?"></textarea>
+              <input class="fos__button" type="submit" value="Отправить запрос">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"> 
+      <div class="footer__container"> 
+        <div class="footer__wrapper"> 
+          <div class="footer__topside"> <a class="footer__logo" href="/"><img class="footer__img" src="./images/logo-footer.png"></a>
+            <div class="footer__list"> 
+              <div class="footer__box"> <a class="footer__link" href="/">О компании</a></div>
+              <div class="footer__box"> <a class="footer__link" href="/">Продукция</a></div>
+              <div class="footer__box"> <a class="footer__link" href="/">Новости</a></div>
+              <div class="footer__box"> <a class="footer__link" href="/">Контакты</a></div>
+            </div>
+          </div>
+          <div class="footer__botside"> 
+            <div class="footer__contacts"><a class="footer__phone" href="tel:">+7 495 640 93 93</a><a class="footer__email" href="mailto:">info@ar-chimia.ru</a>
+              <div class="footer__socials"><a class="footer__social" href="/"><img class="footer__icon" src="./images/facebook-footer.svg" alt="facebook"></a><a class="footer__social" href="/"><img class="footer__icon" src="./images/instagram-footer.svg" alt="instagram"></a></div>
+            </div>
+            <div class="footer__copyright">© ООО “АР-ХИМИЯ”. Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="./slick.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

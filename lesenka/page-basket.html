@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="fonts/manrope/manrope.css">
+    <link rel="stylesheet" href="fonts/inter/inter.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <title>Lesenka</title>
+</head>
+<body>
+
+
+
+  <div class="page" id="page">
+    <div class="manual">
+      <div class="manual__bg">
+        <div class="container">
+          <div class="manual__wrapper">
+            <div class="manual__leftside">
+              <div class="manual__list">
+                <div class="manual__link manual__link--offer">Акции</div>
+                <div class="manual__link manual__link--active">Виды лестниц</div>
+                <div class="manual__link">Расходные материалы</div>
+                <div class="manual__link">Ручной инструмент</div>
+                <div class="manual__link">Все для сада и огорода</div>
+                <div class="manual__link">Комплектующие для окон</div>
+                <div class="manual__link">Лестницы и стремянки</div>
+                <div class="manual__link">Средства защиты</div>
+                <div class="manual__link">Хозяйственные товары</div>
+                <div class="manual__link">Строительная химия</div>
+                <div class="manual__link">Электроинструмент</div>
+                <div class="manual__link">Стенды</div>
+              </div>
+            </div>
+            <div class="manual__rightside">
+              <div class="manual__item">
+                <div class="manual__title">Акции</div>
+              </div>
+              <div class="manual__item manual__item--active">
+                <div class="manual__title">Виды лестниц</div>
+                <div class="manual__roster">
+                  <div class="manual__box"><a class="manual__name" href="/">Готовые лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Эконом лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Деревянные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Межэтажные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Металлические лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Модульные лестницы</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Лестницы без перил</a></div>
+                  <div class="manual__box"><a class="manual__name" href="/">Лестницы на второй этаж</a></div>
+                </div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Расходные материалы</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Ручной инструмент</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Все для сада и огорода</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Комплектующие для окон</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Лестницы и стремянки</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Средства защиты</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Хозяйственные товары</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Строительная химия</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Электроинструмент</div>
+              </div>
+              <div class="manual__item">
+                <div class="manual__title">Стенды</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cities" id="cities">
+      <div class="cities__topside">
+        <div class="cities__top">
+          <div class="cities__title">Выбор города</div>
+          <div class="cities__close" data-fancybox-close> <span> </span><span> </span><span> </span></div>
+        </div>
+      </div>
+      <div class="cities__botside">
+        <form class="cities__form">
+          <div class="cities__name">Название города</div>
+          <input class="cities__input" type="text" placeholder="Введите название">
+          <input class="cities__find" type="submit" value="">
+        </form>
+        <div class="cities__list"> 
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Москва</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Санкт-Петербург</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Екатеринбург</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Казань</a></div>
+          </div>
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Краснодар</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Нижний Новгород</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Ростов-на-Дону</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Орел</a></div>
+          </div>
+          <div class="cities__column">
+            <div class="cities__box"> <a class="cities__link" href="">Уфа</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Пермь</a></div>
+            <div class="cities__box"> <a class="cities__link" href="">Хабаровск</a></div>
+          </div>
+        </div>
+        <div class="cities__buttons"> <a class="cities__button" href="/">Продолжить с выбранным</a><a class="cities__button" href="/">Выбрать автоматически</a></div>
+      </div>
+    </div>
+    <div class="top"> 
+      <div class="container"> 
+        <div class="top__wrapper"> 
+          <div class="top__list"> 
+            <div class="top__box"> <a class="top__link" href="/">Как заказать</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Адреса складов</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Частые вопросы</a></div>
+            <div class="top__box"> <a class="top__link" href="/">О компании</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Сертификаты</a></div>
+            <div class="top__box"> <a class="top__link" href="/">Помощь</a></div>
+          </div>
+          <div class="top__rightside"> 
+            <div class="top__city">Тверь</div>
+            <div class="city"> 
+              <div class="city__question">Ваш город - <b>Тверь?</b></div>
+              <div class="city__answers"> 
+                <div class="city__answer">Да</div><a class="city__answer" data-fancybox data-animation-duration data-src="#cities">Нет</a>
+              </div>
+            </div>
+            <div class="top__right"><a class="top__login" href="/">Вход</a><a class="top__registration" href="/"><span>Регистрация</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header"> 
+      <div class="container"> 
+        <div class="header__wrapper"> 
+          <div class="header__hamburger"><span> </span><span> </span><span></span></div><a class="header__logo" href="/"><img class="header__img" src="./images/logo.svg"></a>
+          <div class="header__center"> 
+            <div class="header__catalog"> 
+              <div class="header__catalog__left"> <span> </span><span></span><span></span></div>
+              <div class="header__catalog__name">Каталог</div>
+            </div>
+            <div class="header__find">Найти</div>
+            <form class="header__form">
+              <input class="header__input" type="text" placeholder="Лестница винтовая">
+              <input class="header__search" type="submit" value="Найти">
+            </form>
+            <div class="header__contacts"> <a class="header__phone" href="tel:88003334925">8 (800) 333-49-25</a>
+              <div class="header__name">Звонок бесплатный</div>
+            </div>
+          </div>
+          <div class="header__rightside"> 
+            <div class="header__favorite"><span>1</span>
+              <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.501 5.501 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78v0Z" stroke="#232630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="header__basket"><span>2</span>
+              <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM20 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div class="header__basket__name">Корзина</div>
+            </div>
+            <div class="header__finding"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu"> 
+      <div class="container"> 
+        <div class="menu__wrapper"> 
+          <div class="menu__list"> 
+            <div class="menu__item"> <a class="menu__link menu__link--offer" href="/">Акции</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--credit" href="/">Рассрочка</a></div>
+            <div class="menu__item menu__item--delivery"><a class="menu__link menu__link--delivery" href="/">Доставка и оплата</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--opt" href="/">Оптовикам</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--contacts" href="/">Контакты</a></div>
+          </div>
+          <div class="menu__rightside"> 
+            <div class="menu__item"> <a class="menu__link menu__link--review" href="/">Обзоры</a></div>
+            <div class="menu__item"> <a class="menu__link menu__link--news" href="/">Новости</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bread">
+      <div class="container"> 
+        <div class="bread__wrapper"> 
+          <div class="bread__list"> 
+            <div class="bread__box"> <a class="bread__link" href="/">Каталог</a></div>
+            <div class="bread__box">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m4.5 9 3-3-3-3" stroke="#B1B3B9" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="bread__box"> <a class="bread__link" href="/">Металлические лестницы</a></div>
+            <div class="bread__box">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m4.5 9 3-3-3-3" stroke="#B1B3B9" stroke-width="1.167" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="bread__box">Модульная малогабаритная лестница Линия (прямой марш)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--include sections/slider.pug-->
+    <!--include sections/hits.pug-->
+    <!--include sections/category.pug-->
+    <!--include sections/catalog-page.pug-->
+    <div class="content"> 
+      <div class="container"> 
+        <div class="content__wrapper">
+          <div class="basket">
+            <div class="basket__leftside">
+              <div class="basket__topside">
+                <div class="basket__title">Корзина</div>
+                <div class="basket__clear">Очистить корзину</div>
+              </div>
+              <div class="basket__roster"> 
+                <div class="basket__box"> 
+                  <div class="basket__left"><a class="basket__photo" href="/"><img class="basket__img" src="./images/basket/lesenka.png"></a>
+                    <div class="basket__center"> <a class="basket__name" href="/">Модульная малогабаритная лестница Эксклюзив (c поворотом на 180 градусов)</a>
+                      <div class="basket__material"><img class="basket__material__icon" src="./images/basket/material.png">
+                        <div class="basket__material__name">Лиственица</div>
+                      </div><a class="basket__favorite" href="/">В избранное</a>
+                    </div>
+                  </div>
+                  <div class="basket__right">
+                    <div class="basket__number"> 
+                      <input class="basket__number__input" type="text" placeholder="0"><span>шт.</span>
+                    </div>
+                    <div class="basket__prices"> 
+                      <div class="basket__price">50 000 ₽</div>
+                      <div class="basket__oldprice">25 000 ₽</div>
+                      <div class="basket__sale">Скидка 500 ₽</div>
+                    </div><a class="basket__del" href="/">
+                      <svg fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.25 4.5h13.5M6 4.5V3a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 12 3v1.5m2.25 0V15a1.5 1.5 0 0 1-1.5 1.5h-7.5a1.5 1.5 0 0 1-1.5-1.5V4.5h10.5ZM7.5 8.25v4.5M10.5 8.25v4.5" stroke="#7B8296" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="basket__box"> 
+                  <div class="basket__left"><a class="basket__photo" href="/"><img class="basket__img" src="./images/basket/lesenka.png"></a>
+                    <div class="basket__center"> <a class="basket__name" href="/">Модульная малогабаритная лестница Эксклюзив (c поворотом на 180 градусов)</a>
+                      <div class="basket__material"><img class="basket__material__icon" src="./images/basket/material.png">
+                        <div class="basket__material__name">Лиственица</div>
+                      </div><a class="basket__favorite" href="/">В избранное</a>
+                    </div>
+                  </div>
+                  <div class="basket__right">
+                    <div class="basket__number"> 
+                      <input class="basket__number__input" type="text" placeholder="0"><span>шт.</span>
+                    </div>
+                    <div class="basket__prices"> 
+                      <div class="basket__price">50 000 ₽</div>
+                      <div class="basket__oldprice">25 000 ₽</div>
+                      <div class="basket__sale">Скидка 500 ₽</div>
+                    </div><a class="basket__del" href="/">
+                      <svg fill="none" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.25 4.5h13.5M6 4.5V3a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 12 3v1.5m2.25 0V15a1.5 1.5 0 0 1-1.5 1.5h-7.5a1.5 1.5 0 0 1-1.5-1.5V4.5h10.5ZM7.5 8.25v4.5M10.5 8.25v4.5" stroke="#7B8296" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket__rightside"> 
+              <div class="basket__total"> 
+                <div class="basket__top"> 
+                  <div class="basket__total__name">Ваша корзина</div>
+                  <div class="basket__total__value">3 товара</div>
+                </div>
+                <div class="basket__tr"> 
+                  <div class="basket__td">Товары</div>
+                  <div class="basket__td">113 500</div>
+                </div>
+                <div class="basket__tr"> 
+                  <div class="basket__td">Скидка</div>
+                  <div class="basket__td basket__td--sale">- 500</div>
+                </div>
+                <div class="basket__bot"> 
+                  <div class="basket__cost__name">Общаяя стоимость</div>
+                  <div class="basket__cost__value">444 499</div>
+                </div>
+              </div>
+              <div class="basket__bottom"> <a class="basket__button" href="/">Перейти к оформлению</a>
+                <div class="basket__desc">Доступные способы оплаты и стоимость доставки определяется при оформлении заказа</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./owl.carousel.min.js"></script>
+  <script src="./slick.min.js"></script>
+  <script src="./jquery.fancybox.min.js"></script>
+  <script src="./jquery.star-rating-svg.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
